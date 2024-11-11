@@ -1,0 +1,243 @@
+
+
+#Global-header{
+    align-content: space-evenly;
+    font-family: sans-serif;
+    justify-content: flex-start;
+ }
+ #Grid-container{
+     display: flex;
+     flex-direction: column;
+
+     align-items: center;
+     padding: 10px 20px;
+ }
+ #Global-footer a{ 
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    display: block;
+ }
+ #Kategori-felt {
+    border: 2px solid black;
+ }
+ header ul li img{
+    width: 125px;
+ }
+ footer h2 img{
+    width: 125px;
+ }
+ footer h3 a{
+    display: flex;
+    flex-direction: column;
+ }
+ .kontakt-item{
+    display: flex;
+    margin-bottom: 10px;
+    color: black;
+ }
+ .kontakt-item span{
+    font-weight: bold;
+ }
+ .Ikon-liste a{
+     padding: 0;
+     margin: 0;
+     color: black;
+ }
+ 
+ .Meny-liste, .Ikon-liste{
+     list-style-type: none;
+     padding: 0px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     width: 100%;
+     text-align: left;
+ 
+ }
+ .Meny-liste a, .Ikon-liste{
+     text-decoration: none;
+     color: black;
+     font-size: 17px;
+     align-content: space-evenly;
+     list-style: none;
+ }
+ .search-form{
+    display: flex;
+  align-self: flex-start;
+  padding: 5px 9px;
+  margin-bottom: 10px;
+ }
+ .search-form input{
+     padding: 5px 9px;
+     font-size: 13px;
+     border: 2px solid black;
+     border-radius: 0 5px 5px 0;
+     outline: none;
+ }
+ .search-form button{
+     padding: 5px 9px;
+     border: 2px solid black;
+     cursor: pointer;
+     border-radius: 5px 5px 5px 5px;
+ }
+ #banner{
+    max-width: 500px;
+    justify-items: center;
+    border: 2px solid black;
+    background-color: rgb(141, 141, 204);
+    color: black;
+    padding: 20px;
+    min-height: 300px; /
+ }
+
+ #banner button a{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    padding: 5px 5px 5px 5px;
+    margin: 20;
+    min-width: 50px;
+    text-decoration: none;
+ }
+
+.product-card {
+    max-width: 350px; 
+    min-width: 300px;
+    width: 100%; 
+    box-shadow: 13px 9px 20px 0px #efefef; 
+    border-radius: 4px;
+    border: 1px solid black;
+    margin: 10px ;
+    
+}
+.product-card img{
+    max-width: 40%;
+    height: auto;
+    border-radius: 5px;
+}
+.kategori-felt {
+    display: block;
+    min-height: 200px;
+    gap: 5px;
+   
+    
+}
+
+.kategori-kort {
+    min-width: 150px;
+    max-width: 350px;
+    background-color: #ffffff;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 1rem;
+
+}
+
+.kategori-kort a {
+    text-decoration: none;
+    color: black;
+}
+.Andmeldelser{
+    margin-top: 10px;
+    border-radius: 10px;
+    max-width: 400px;
+    padding: 20px;
+}
+.Andmeldelser section{
+  border: 2px solid black;
+  margin-top: 10px;
+}
+.Andmeldelser img{
+    max-width: 150px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+ 
+ 
+/*TABLET*/
+@media only screen and (min-width: 800px) {
+    #Meny {
+        display: grid;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #Meny .Ikon-liste{
+    justify-content: flex-end;
+    }
+    .search-form{
+        justify-content: flex-start;
+    }
+    #banner{
+        justify-content: center;
+    }
+    .Ikon-liste{
+        display: flex;
+        align-items: flex-end;
+    }
+    #Grid-container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .Meny-liste, .Ikon-liste{
+        flex-direction: row;
+        gap: 20px;
+    }
+    .search-form{
+        width: auto;
+    }
+    #Global-footer{
+   display: grid;
+   grid-template-rows: auto 1fr ;
+   text-decoration: none;
+    }
+   .footer-header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+     align-items: center;
+    justify-content: space-around;
+   }
+   .footer-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+
+   }
+   .kontakt .Medier .Snarveier{
+   padding: 10px;
+   text-align: center;
+   }
+   .kontakt{
+    align-content: flex-start;
+   }
+   .Medier a{
+    align-content: flex-end;
+    list-style: none;
+    color: black;
+   }
+   #banner{
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+   }
+
+
+}
