@@ -1,6 +1,13 @@
 
 
+
+
+@media only screen and (max-width: 767px){
+
+    /*ALT FOR HEADER*/
 #Global-header{
+    display: flex;
+    flex-direction: column;
     align-content: space-evenly;
     font-family: sans-serif;
     justify-content: flex-start;
@@ -8,37 +15,14 @@
  #Grid-container{
      display: flex;
      flex-direction: column;
-
      align-items: center;
      padding: 10px 20px;
  }
- #Global-footer a{ 
-    text-decoration: none;
-    list-style: none;
-    color: black;
-    display: block;
- }
- #Kategori-felt {
-    border: 2px solid black;
- }
+
  header ul li img{
     width: 125px;
  }
- footer h2 img{
-    width: 125px;
- }
- footer h3 a{
-    display: flex;
-    flex-direction: column;
- }
- .kontakt-item{
-    display: flex;
-    margin-bottom: 10px;
-    color: black;
- }
- .kontakt-item span{
-    font-weight: bold;
- }
+ 
  .Ikon-liste a{
      padding: 0;
      margin: 0;
@@ -81,16 +65,24 @@
      cursor: pointer;
      border-radius: 5px 5px 5px 5px;
  }
+
+
+
+ /*ALT FOR BANNER*/
  #banner{
-    max-width: 500px;
+    min-height: 250px;
+    max-width: 100%;
     justify-items: center;
     border: 2px solid black;
     background-color: rgb(141, 141, 204);
     color: black;
     padding: 20px;
-    min-height: 300px; /
+    min-height: 300px; 
+    background-image: url('https://cdn.pixabay.com/photo/2020/06/29/19/34/czechia-5354033_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
  }
-
  #banner button a{
     display: flex;
     justify-content: center;
@@ -102,57 +94,82 @@
     text-decoration: none;
  }
 
-.product-card {
-    max-width: 350px; 
-    min-width: 300px;
-    width: 100%; 
-    box-shadow: 13px 9px 20px 0px #efefef; 
-    border-radius: 4px;
-    border: 1px solid black;
-    margin: 10px ;
+
+
+
+ /*ALT FOR PRODUKTER*/
+.produkt-kort {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    border-style: hidden;
+    border-radius: 2rem;
+    max-width: 250px;
+    background: lightgray;
+    color: black;
+    text-decoration: none;
+    max-width: 100%; 
+    box-sizing: border-box;
+    box-shadow: 20px 20px 20px 20px #efefef; 
     
 }
-.product-card img{
+.produkt-kort img{
     max-width: 40%;
-    height: auto;
+    max-height: auto;
     border-radius: 5px;
 }
-.kategori-felt {
-    display: block;
-    min-height: 200px;
-    gap: 5px;
-   
-    
-}
 
-.kategori-kort {
-    min-width: 150px;
-    max-width: 350px;
-    background-color: #ffffff;
+
+
+
+
+
+/*ALT FOR KATTEGORI*/
+#kategori-grid{
+    text-decoration: none;
     padding: 20px;
     gap: 10px;
     border-radius: 10px;
+}
+#kategori-grid section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
     border: 1px solid black;
     text-align: center;
-    margin-top: 1rem;
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.kategori-kort a {
-    text-decoration: none;
-    color: black;
-}
+
+
+/*ALT FOR ANMELDELSER*/
 .Andmeldelser{
     margin-top: 10px;
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 100%;
     padding: 20px;
 }
 .Andmeldelser section{
   border: 2px solid black;
   margin-top: 10px;
 }
-.Andmeldelser img{
+.Andmeldelse-kort{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 10px; 
+    max-width: 300px; 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.Andmeldelse-kort img{
     max-width: 150px;
     margin-top: 5px;
     margin-left: 5px;
@@ -160,39 +177,262 @@
 
 
 
+/*ALT FOR FOOTER*/
+.container, #Global-header, #Global-footer, #Grid-container {
+    width: 100%;
+    max-width: 1200px; /* Eller en annen ønsket verdi */
+    margin: 0 auto;
+}
+#Global-footer .Medier ul li{
+    list-style: none;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+footer h2 img{
+    width: 125px;
+ }
+ footer h3 a{
+    display: flex;
+    flex-direction: column;
+ }
+ #Global-footer a{ 
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    display: block;
+ }
+
+
+
+
+
+
+
+/*ALT FOR TEKST + ANNET*/
+.button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem; /* Gir ekstra bredde for oval form */
+    background-color: white; /* Hvit bakgrunn */
+    color: black; /* Sort tekst */
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid black; /* Sort kant */
+    border-radius: 30px; /* Runde kanter for å skape oval form */
+    text-align: center;
+    text-decoration: none; /* Fjerner understrek */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* For glatte hover-effekter */
+}
+
+.button:hover {
+    background-color: black;
+    color: white; /* Omvendt farge for kontrast ved hover */
+}
+
+
+
+}
 
 
 
  
- 
-/*TABLET*/
-@media only screen and (min-width: 800px) {
-    #Meny {
-        display: grid;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+/*TABLET/DESKTOP*/
+@media only screen and (min-width: 768px) {
+    
+    .wrapper {
+        max-width: 1200px;    /* Begrens maksimal bredde til 1200px */
+        margin: 0 auto;       /* Midtstill innholdet */
+        padding: 0 1rem;      /* Gir litt plass på sidene */
+        box-sizing: border-box;
     }
-    #Meny .Ikon-liste{
+
+
+    body, #Global-header, #Global-footer, #Grid-container {
+        width: 100%; /* Full bredde for disse elementene */
+        max-width: 1200px; /* Begrens dem til 1200px */
+        margin: 0 auto; /* Midtstill */
+        padding: 0 20px;  /* Ekstra plass til sides */
+        box-sizing: border-box; /* Sørg for at padding ikke øker bredden */
+    }
+/* Stiler for header, main, og footer for at de skal arve midtstillingen */
+#Global-header, #Global-footer, #Grid-container, .product-card, .Andmeldelser  {
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#Grid-container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+ul .Ikon-liste{
+    justify-content: space-evenly ;
+
+}
+
+
+
+
+/* ALT INNENFOR BANNER*/
+#banner {
     justify-content: flex-end;
+    align-items: flex-end;
+    text-align: flex-end;
+    margin: 0 auto;
+    min-height: 500px;
+    background-size: cover;
+    border-radius: 25px;
+    background-position: center;
+    background-image: url('https://cdn.pixabay.com/photo/2020/06/29/19/34/czechia-5354033_1280.jpg');
+    background-repeat: no-repeat;
+    overflow-y:scroll ;
+}
+
+
+
+.container, #Global-header, #Global-footer, #Grid-container {
+        width: 100%;
+        min-width: auto;
+        padding: 0 20px; 
     }
-    .search-form{
-        justify-content: flex-start;
+
+    
+    
+   
+   
+
+
+   /*ALT INNENFOR KATEGORI*/
+
+
+   #kategori-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto repeat(3, 1fr);
+    gap: 1rem;
+    h2{
+        grid-column: 1 / 4;
+        margin: 0;
     }
-    #banner{
-        justify-content: center;
-    }
-    .Ikon-liste{
+
+    section{
         display: flex;
-        align-items: flex-end;
+        flex-wrap: wrap;
+        align-items: end;
+        h3{
+            margin: 0;
+            font-weight: 400;
+            font-size: 16px;
+        }
     }
-    #Grid-container{
+    #Vingard, #Cruise, #sprudlende, #Rod-vin, #Hvit-vin{
+        padding: 3rem;
+        border-radius: 10px;
+    }
+    #Vingard{
+        max-width: 386px;
+        background-color: hsl(146, 52%, 72%); 
+        grid-column: 1 / 2; 
+        grid-row: 2 / 2; 
+    }
+    #Cruise{
+        max-width: 386px;
+        background-color: hsl(0, 68%, 50%); 
+        grid-column: 2 / 3; 
+        grid-row: 2 / 3; 
+    }
+    
+    #sprudlende{
+        max-width: 386px;
+        background-color: hsl(337, 52%, 72%); 
+        grid-column: 3 / 4;
+        grid-row: 2 / 4;
+    }
+    
+    #Rod-vin{
+        max-width: 864px;
+        background-color: hsl(258, 39%, 26%);
+        grid-column: 1 / 3;
+        grid-row: 3 / 5;
+    }
+    
+    #Hvit-vin{
+        max-width: 300px;
+        background-color: hsl(271, 52%, 72%);
+        grid-column: 3 / 4;
+        grid-row: 4 / 4;
+    }
+    }
+/* Ekstra for grid-inndeling av kategori-seksjonen */
+#kategori-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+#Kategorier{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+/* ALT FOR HEADER */
+header ul li img{
+    width: 125px;
+ }
+#Global-header {
+        display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        padding: 10px 20px; 
         width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .search-form {
+        flex: 2; /* Aligns to the left side */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-right: 20px; /* Adds spacing between search and nav */
+    }
+
+    .Meny-liste {
+        flex: 2; /* Centers nav list */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* Adds space between nav items */
+    }
+
+    .Ikon-liste {
+        flex: 1; /* Aligns to the right side */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-left: 20px; /* Adds spacing between nav and icons */
+    }
+
+    .search-form, .Meny-liste, .Ikon-liste {
+        margin: 0;
+    }
+
+    #Grid-container{
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+         grid-template-columns: 0.5fr 3fr 0.5fr;
     }
     .Meny-liste, .Ikon-liste{
         flex-direction: row;
@@ -201,12 +441,172 @@
     .search-form{
         width: auto;
     }
-    #Global-footer{
-   display: grid;
-   grid-template-rows: auto 1fr ;
-   text-decoration: none;
+ #Meny {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
-   .footer-header{
+    #Global-header #Grid-container .Meny-liste li{
+        color: black;
+        list-style: none;
+        text-decoration: none;
+    }
+    #Global-header #Grid-container .Ikon-liste li{
+        color: black;
+        list-style: none;
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+ /* ALT FOR ANMELDELSER */
+.Andmeldelser{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.Andmeldelse-kort img{
+    max-width: 156px;
+}
+.Andmeldelse-kort{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 10px; 
+    max-width: 300px; 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+}
+#Andmeldelse-area{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+/* ALT FOR PRODUKTER */
+#Produkt-area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto);   /* 2 rows */
+    gap: 1,5rem; 
+    padding: 0 1rem; /* Margin on the sides */
+    margin: 0 auto; 
+    width: 100%;
+    max-width: 1200px; 
+    border-color: lightgray;
+    box-sizing: border-box;
+}
+.produkt-kort img{
+    min-width: 149px;
+    max-width: 150px;
+    height: auto;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+.produkt-kort {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    border-style: hidden;
+    border-radius: 2rem;
+    max-width: 350px;
+    background: lightgray;
+    color: black;
+    text-decoration: none;
+    max-width: 100%; 
+    box-sizing: border-box;
+    box-shadow: 20px 20px 20px 20px #efefef; 
+}
+.produkt-kort p{
+    justify-content: flex-start;
+}
+#Produkter{
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    text-align: center; /* Center-aligns text */
+    padding: 3rem;
+}
+
+
+
+
+
+
+
+
+/* ALT FOR ELEMENTER PÅ NETTSIDEN*/
+.button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem; /* Gir ekstra bredde for oval form */
+    background-color: white; /* Hvit bakgrunn */
+    color: black; /* Sort tekst */
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid black; /* Sort kant */
+    border-radius: 30px; /* Runde kanter for å skape oval form */
+    text-align: center;
+    text-decoration: none; /* Fjerner understrek */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* For glatte hover-effekter */
+}
+
+.button:hover {
+    background-color: black;
+    color: white; /* Omvendt farge for kontrast ved hover */
+}
+
+
+
+
+
+/* ALT FOR FOOTER */
+#Global-footer .Medier ul li{
+    list-style: none;
+    flex-direction: row;
+}
+#Global-footer .Snarveier a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+.footer-header img{
+    width: 125px;
+ }
+
+#Global-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    list-style: none;
+}
+.footer-header{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -228,16 +628,21 @@
     align-content: flex-start;
    }
    .Medier a{
-    align-content: flex-end;
     list-style: none;
+    align-content: flex-end;
     color: black;
    }
-   #banner{
-    justify-content: center;
-    align-items: center;
-    align-self: center;
+.Meny-liste, .Ikon-liste {
+    flex-direction: row;
+    gap: 20px;
     text-align: center;
-   }
+}
+
+
+
+
+
+
 
 
 }
