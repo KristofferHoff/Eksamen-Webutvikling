@@ -11,9 +11,11 @@
     align-content: space-evenly;
     font-family: sans-serif;
     justify-content: flex-start;
+    align-items: flex-start;
  }
  #Grid-container{
      display: flex;
+     flex-grow: 1;
      flex-direction: column;
      align-items: center;
      padding: 10px 20px;
@@ -48,23 +50,36 @@
  }
  .search-form{
     display: flex;
-  align-self: flex-start;
-  padding: 5px 9px;
-  margin-bottom: 10px;
- }
- .search-form input{
-     padding: 5px 9px;
-     font-size: 13px;
-     border: 2px solid black;
-     border-radius: 0 5px 5px 0;
-     outline: none;
- }
- .search-form button{
-     padding: 5px 9px;
-     border: 2px solid black;
-     cursor: pointer;
-     border-radius: 5px 5px 5px 5px;
- }
+    width: 100%;
+    align-items: center; /* Align input and button vertically */
+    border: 1px solid black; /* Thin black border around the search form */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Ensures child elements don’t overflow the parent */
+    max-width: 200px; /* Optional: sets a maximum width for the search form */
+}
+
+.search-form input{
+    flex: 2; /* Input takes up remaining space */
+    padding: 8px; /* Adjust padding for better spacing */
+    font-size: 14px; /* Slightly larger font for better visibility */
+    border: none; /* Remove individual border */
+    outline: none; /* Remove default focus outline */
+    border-radius: 0; /* Ensure no radius on the input to fit perfectly with the parent */
+}
+
+.search-form button{
+    background-color: transparent; /* Transparent background for icon button */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Pointer cursor for button */
+    padding: 8px; /* Padding for consistent size */
+    font-size: 16px; /* Optional: Adjust icon size */
+    display: flex; /* Center content inside the button */
+    align-items: center; /* Vertical alignment */
+    justify-content: center; 
+    color: black; 
+}
+
+
 
 
 
@@ -82,6 +97,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: end;
  }
  #banner button a{
     display: flex;
@@ -89,7 +105,7 @@
     background-color: white;
     color: black;
     padding: 5px 5px 5px 5px;
-    margin: 20;
+    margin: 20px;
     min-width: 50px;
     text-decoration: none;
  }
@@ -187,6 +203,7 @@
     list-style: none;
     justify-content: flex-start;
     flex-direction: column;
+    margin-top: 5px;
 }
 footer h2 img{
     width: 125px;
@@ -201,6 +218,10 @@ footer h2 img{
     color: black;
     display: block;
  }
+ .Medier ul{
+    margin-top: 10px;
+ }
+
 
 
 
@@ -211,7 +232,7 @@ footer h2 img{
 /*ALT FOR TEKST + ANNET*/
 .button {
     display: inline-block;
-    padding: 0.5rem 1.5rem; /* Gir ekstra bredde for oval form */
+    padding: 0.5rem 1.3rem; /* Gir ekstra bredde for oval form */
     background-color: white; /* Hvit bakgrunn */
     color: black; /* Sort tekst */
     font-size: 16px;
@@ -278,7 +299,7 @@ ul .Ikon-liste{
 
 
 /* ALT INNENFOR BANNER*/
-#banner {
+#banner{
     justify-content: flex-end;
     align-items: flex-end;
     text-align: flex-end;
@@ -398,20 +419,14 @@ header ul li img{
         box-sizing: border-box;
     }
 
-    .search-form {
-        flex: 2; /* Aligns to the left side */
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding-right: 20px; /* Adds spacing between search and nav */
-    }
-
     .Meny-liste {
         flex: 2; /* Centers nav list */
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px; /* Adds space between nav items */
+        list-style: none;
+    
     }
 
     .Ikon-liste {
@@ -420,6 +435,8 @@ header ul li img{
         justify-content: flex-end;
         align-items: center;
         padding-left: 20px; /* Adds spacing between nav and icons */
+        list-style: none;
+        color: black;
     }
 
     .search-form, .Meny-liste, .Ikon-liste {
@@ -438,9 +455,7 @@ header ul li img{
         flex-direction: row;
         gap: 20px;
     }
-    .search-form{
-        width: auto;
-    }
+
  #Meny {
         display: flex;
         flex-wrap: wrap;
@@ -449,15 +464,40 @@ header ul li img{
         align-items: center;
         width: 100%;
     }
-    #Global-header #Grid-container .Meny-liste li{
+    #Global-header #Meny #Grid-container .Meny-liste li a{
         color: black;
-        list-style: none;
         text-decoration: none;
+        list-style: none;
     }
-    #Global-header #Grid-container .Ikon-liste li{
-        color: black;
-        list-style: none;
-        text-decoration: none;
+    .search-form{
+        display: flex;
+        align-items: center; /* Align input and button vertically */
+        border: 1px solid black; /* Thin black border around the search form */
+        border-radius: 5px; /* Rounded corners */
+        overflow: hidden; /* Ensures child elements don’t overflow the parent */
+        min-width: 195px;
+        max-width: 300px; /* Optional: sets a maximum width for the search form */
+    }
+    
+    .search-form input{
+        flex: 1; /* Input takes up remaining space */
+        padding: 8px; /* Adjust padding for better spacing */
+        font-size: 14px; /* Slightly larger font for better visibility */
+        border: none; /* Remove individual border */
+        outline: none; /* Remove default focus outline */
+        border-radius: 0; /* Ensure no radius on the input to fit perfectly with the parent */
+    }
+    
+    .search-form button{
+        background-color: transparent; /* Transparent background for icon button */
+        border: none; /* Remove button border */
+        cursor: pointer; /* Pointer cursor for button */
+        padding: 8px; /* Padding for consistent size */
+        font-size: 16px; /* Optional: Adjust icon size */
+        display: flex; /* Center content inside the button */
+        align-items: center; /* Vertical alignment */
+        justify-content: center; 
+        color: black; 
     }
 
 
@@ -487,7 +527,7 @@ header ul li img{
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin: 10px; 
-    max-width: 300px; 
+    max-width: 289px; 
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -495,7 +535,7 @@ header ul li img{
 }
 #Andmeldelse-area{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
 }
 
@@ -551,6 +591,7 @@ header ul li img{
     text-align: center; /* Center-aligns text */
     padding: 3rem;
 }
+
 
 
 
@@ -637,7 +678,11 @@ header ul li img{
     gap: 20px;
     text-align: center;
 }
-
+.Medier ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+ }
 
 
 
