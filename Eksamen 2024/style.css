@@ -1,8 +1,8 @@
 
 
+/*ALT FOR MOBIL*/
 
-
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 426px){
 html{
     font-family: sans-serif;
 }
@@ -24,7 +24,7 @@ html{
      list-style-type: none;
      display: flex;
      flex-direction: column;
-     gap: 10px;
+     gap: 25px;
      width: 100%;
      text-align: left;
      
@@ -199,16 +199,23 @@ html{
 
 
 /*ALT FOR ANMELDELSER*/
+#Andmeldelse-area{
+    display: flex;
+    overflow-y: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    gap: 5px;
+    box-sizing: border-box;
+ }
 .Andmeldelser{
-    margin-top: 10px;
-    border-radius: 10px;
-    max-width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     padding: 20px;
 }
-.Andmeldelser section{
-  border: 2px solid black;
-  margin-top: 10px;
-}
+
 .Andmeldelse-kort{
     display: flex;
     flex-wrap: wrap;
@@ -218,22 +225,22 @@ html{
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin: 10px; 
-    max-width: 300px; 
+    max-width: 289px; 
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 10px; 
 }
+
 .Andmeldelse-kort img{
     max-width: 150px;
-    margin-top: 5px;
-    margin-left: 5px;
+    border-radius: 50px;
 }
 
 
 
 /*ALT FOR FOOTER*/
-.container, #Global-header, #Global-footer, #Grid-container {
+.container, #Global-header, #Global-footer{
     width: 100%;
     max-width: 1200px; /* Eller en annen ønsket verdi */
     margin: 0 auto;
@@ -260,10 +267,6 @@ footer h2 img{
  .Medier ul{
     margin-top: 10px;
  }
-
-
-
-
 
 
 
@@ -295,24 +298,25 @@ footer h2 img{
 
 
 
- 
-/*TABLET/DESKTOP*/
-@media only screen and (min-width: 768px) {
+
+
+
+
+
+
+
+
+
+
+/* ALT FOR TABLETT*/
+@media only screen and (min-width: 427px) and (max-width: 767px) {
     html{
         font-family: sans-serif;
     }
-    .wrapper {
-        max-width: 1200px;    /* Begrens maksimal bredde til 1200px */
-        margin: 0 auto;       /* Midtstill innholdet */
-        padding: 0 1rem;      /* Gir litt plass på sidene */
-        box-sizing: border-box;
-    }
-
-
+    
     body, #Global-header, #Global-footer{
-        width: 100%; /* Full bredde for disse elementene */
-        max-width: 1200px; /* Begrens dem til 1200px */
-        margin: 0 auto; /* Midtstill */
+        width: 100%; 
+        max-width: 100%; 
         padding: 0 20px;  /* Ekstra plass til sides */
         box-sizing: border-box; /* Sørg for at padding ikke øker bredden */
     }
@@ -323,7 +327,6 @@ footer h2 img{
     justify-content: center;
     text-align: center;
     padding: 0 20px;
-    width: 100%;
     box-sizing: border-box;
 }
 
@@ -332,32 +335,65 @@ footer h2 img{
 
 
 
-
 /* ALT INNENFOR BANNER*/
 #banner{
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-align: flex-end;
     margin: 0 auto;
-    min-height: 500px;
+    max-height: 1000px;
     background-size: cover;
+    background-color: #000000;
     border-radius: 25px;
     background-position: center;
     background-image: url('https://cdn.pixabay.com/photo/2020/06/29/19/34/czechia-5354033_1280.jpg');
     background-repeat: no-repeat;
-    overflow-y:scroll ;
+    overflow-x :scroll ;
 }
 
 
 
-.container, #Global-header, #Global-footer, #Grid-container {
+.container, #Global-header, #Global-footer{
         width: 100%;
         min-width: auto;
         padding: 0 20px; 
     }
 
+      
+    .wrapper {
+       max-width: 1200px;
+       border: 1px solid #ddd;
+       display: flex;
+       overflow-x: scroll;
+       overflow-y: hidden;
+       scroll-snap-type: x mandatory;
+       box-sizing: border-box;
+    }
+
+    .wrapper #banner {
+        min-width: 100%; 
+        height: 100%; 
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; 
+        align-items: flex-end; 
+        scroll-snap-align: flex-end; 
+        text-align: flex-end;
+        padding: 1rem; 
+        box-sizing: border-box;
+    }
     
+    .wrapper #banner article {
+        max-width: 80%; 
+    }
     
+    .wrapper #banner h2 {
+        margin: 5rem; 
+    }
+    
+    .wrapper #banner p {
+        margin: 5rem; 
+    }
+    
+  
    
    
 
@@ -367,38 +403,43 @@ footer h2 img{
 
    #kategori-grid{
     display: grid;
-    grid-template-columns: repeat(3, max-content);
-    grid-template-rows: auto;
-    box-sizing: border-box;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 1165px;
+    gap: 0px;
+    padding: 0px;
+    margin: 0px;
     h2{
         grid-column: 1 / 4;
         margin: 0;
     }
 
     #kategori-grid section{
-        display: flex;
-        flex-wrap: wrap;
         align-items: end;
-        padding: 1.5rem;
+        padding: 1rem;
         border-radius: 10px;
-        box-sizing: border-box;
-        width: 100%;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         h3{
             margin: 0;
-            font-weight: 400;
             font-size: 16px;
         }
     }
     #Vingard, #Cruise, #sprudlende, #Rod-vin, #Hvit-vin{
-        padding: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
         border-radius: 10px;
+        align-content: center;
+        align-items: center;
     }
     #Vingard{
         max-width: 386px;
-        grid-column: 1;
+        height: 200px;
+        border: 1px solid black;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
         
         
         background-image: url('https://cdn.pixabay.com/photo/2023/12/24/16/43/autumn-8467482_1280.jpg');
@@ -406,8 +447,10 @@ footer h2 img{
     }
     #Cruise{
        max-width: 386px;
-        background-color: hsl(0, 68%, 50%); 
-        grid-column: 2;
+       height: 200px;
+       border: 1px solid black;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
         
         
         background-image: url('https://cdn.pixabay.com/photo/2023/10/27/09/38/sea-8344717_1280.jpg');
@@ -416,8 +459,10 @@ footer h2 img{
     
     #sprudlende{
         max-width: 386px;
-        background-color: hsl(337, 52%, 72%); 
-       grid-column: 3;
+        height: 200px;
+        border: 1px solid black;
+       grid-column: 3 / 4;
+       grid-row: 1 / 2;
         
         background-image: url('https://cdn.pixabay.com/photo/2022/03/08/13/41/drinks-7055770_1280.jpg');
         background-size: cover;
@@ -425,18 +470,23 @@ footer h2 img{
     
     #Rod-vin{
         max-width: 864px;
-        background-color: hsl(258, 39%, 26%);
-        grid-column: span 2;
-        grid-row: span 1;
+        height: 200px;
+        border: 1px solid black;
+        grid-column: 1 / span 3;
+        grid-row: 2 / 3;
         
         background-image: url('https://cdn.pixabay.com/photo/2015/07/18/13/14/wine-850337_1280.jpg');
         background-size: cover;
     }
     
     #Hvit-vin{
-        max-width: 300px;
+       min-width: 300px;
+       height: 200px;
+        border: 1px solid black;
         background-color: hsl(271, 52%, 72%);
-        grid-column: 3;
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        justify-self: end;
         
         
        
@@ -444,120 +494,77 @@ footer h2 img{
         background-size: cover;
     }
     }
-/* Ekstra for grid-inndeling av kategori-seksjonen */
-#kategori-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-#Kategorier{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-}
+
 
 
 
 /* ALT FOR HEADER */
-header ul li img{
+#Global-header{
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+ }
+
+ header ul li img{
     width: 125px;
  }
-#Global-header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 20px; 
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
 
-    .Meny-liste {
-        flex: 2; /* Centers nav list */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px; /* Adds space between nav items */
-        list-style: none;
-    
-    }
-
-    .Ikon-liste {
-        flex: 1; /* Aligns to the right side */
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding-left: 20px; /* Adds spacing between nav and icons */
-        list-style: none;
-        color: black;
-    }
-
-    .search-form, .Meny-liste, .Ikon-liste {
-        margin: 0;
-    }
-
-    #Grid-container{
-        display: grid;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        margin: 0 auto;
-         grid-template-columns: 0.5fr 3fr 0.5fr;
-    }
-    .Meny-liste, .Ikon-liste{
-        flex-direction: row;
-        gap: 20px;
-    }
-
- #Meny {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-    #Global-header #Meny #Grid-container .Meny-liste li a{
-        color: black;
-        text-decoration: none;
-        list-style: none;
-    }
-    .search-form{
-        display: flex;
-        align-items: center; /* Align input and button vertically */
-        border: 1px solid black; /* Thin black border around the search form */
-        border-radius: 5px; /* Rounded corners */
-        overflow: hidden; /* Ensures child elements don’t overflow the parent */
-        min-width: 195px;
-        max-width: 300px; /* Optional: sets a maximum width for the search form */
-    }
-    
-    .search-form input{
-        flex: 1; /* Input takes up remaining space */
-        padding: 8px; /* Adjust padding for better spacing */
-        font-size: 14px; /* Slightly larger font for better visibility */
-        border: none; /* Remove individual border */
-        outline: none; /* Remove default focus outline */
-        border-radius: 0; /* Ensure no radius on the input to fit perfectly with the parent */
-    }
-    
-    .search-form button{
-        background-color: transparent; /* Transparent background for icon button */
-        border: none; /* Remove button border */
-        cursor: pointer; /* Pointer cursor for button */
-        padding: 8px; /* Padding for consistent size */
-        font-size: 16px; /* Optional: Adjust icon size */
-        display: flex; /* Center content inside the button */
-        align-items: center; /* Vertical alignment */
-        justify-content: center; 
-        color: black; 
-    }
-ul .Ikon-liste{
-    justify-content: space-evenly ;
-
+ .Meny-liste, .Ikon-liste{
+     list-style-type: none;
+     display: flex;
+     flex-direction: column;
+     gap: 25px;
+     width: 100%;
+     text-align: left;
+     
+ 
+ }
+ .Meny-liste a, .Ikon-liste a{
+     text-decoration: none;
+     color: black;
+     font-size: 17px;
+     align-content: space-evenly;
+     list-style: none;
+ }
+ .Meny-liste, .Ikon-liste {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
 }
+ .search-form{
+    display: flex;
+    width: 100%;
+    align-items: center; /* Align input and button vertically */
+    border: 1px solid black; /* Thin black border around the search form */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Ensures child elements don’t overflow the parent */
+    max-width: 200px; /* Optional: sets a maximum width for the search form */
+}
+
+.search-form input{
+    flex: 2; /* Input takes up remaining space */
+    padding: 8px; /* Adjust padding for better spacing */
+    font-size: 14px; /* Slightly larger font for better visibility */
+    border: none; /* Remove individual border */
+    outline: none; /* Remove default focus outline */
+    border-radius: 0; /* Ensure no radius on the input to fit perfectly with the parent */
+}
+
+.search-form button{
+    background-color: transparent; /* Transparent background for icon button */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Pointer cursor for button */
+    padding: 8px; /* Padding for consistent size */
+    font-size: 16px; /* Optional: Adjust icon size */
+    display: flex; /* Center content inside the button */
+    align-items: center; /* Vertical alignment */
+    justify-content: center; 
+    color: black; 
+}
+
 
 
 
@@ -565,6 +572,14 @@ ul .Ikon-liste{
 
 
  /* ALT FOR ANMELDELSER */
+ #Andmeldelse-area{
+    display: flex;
+    overflow-y: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    gap: 5px;
+    box-sizing: border-box;
+ }
 .Andmeldelser{
     max-width: 1200px;
     display: flex;
@@ -573,10 +588,7 @@ ul .Ikon-liste{
     justify-content: space-between;
     padding: 20px;
 }
-.Andmeldelse-kort img{
-    max-width: 156px;
-    border-radius: 100px;
-}
+
 .Andmeldelse-kort{
     display: flex;
     flex-wrap: wrap;
@@ -592,12 +604,11 @@ ul .Ikon-liste{
     flex-direction: row;
     gap: 10px; 
 }
-#Andmeldelse-area{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-}
 
+.Andmeldelse-kort img{
+    max-width: 150px;
+    border-radius: 50px;
+}
 
 
 
@@ -722,6 +733,491 @@ ul .Ikon-liste{
     align-content: flex-end;
     color: black;
    }
+
+.Medier ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+ }
+
+
+}
+
+ 
+/*ALT FOR DESKTOP*/
+@media only screen and (min-width: 768px) {
+    html{
+        font-family: sans-serif;
+    }
+
+
+    body, #Global-header, #Global-footer{
+        width: 100%; /* Full bredde for disse elementene */
+        max-width: 1200px; /* Begrens dem til 1200px */
+        margin: 0 auto; /* Midtstill */
+        padding: 0 20px;  /* Ekstra plass til sides */
+        box-sizing: border-box; /* Sørg for at padding ikke øker bredden */
+    }
+/* Stiler for header, main, og footer for at de skal arve midtstillingen */
+#Global-header, #Global-footer, .product-card, .Andmeldelser  {
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+/* ALT INNENFOR BANNER*/
+#banner{
+    margin: 0 auto;
+    max-height: 1000px;
+    background-size: cover;
+    background-color: #000000;
+    border-radius: 25px;
+    background-position: center;
+    background-image: url('https://cdn.pixabay.com/photo/2020/06/29/19/34/czechia-5354033_1280.jpg');
+    background-repeat: no-repeat;
+    overflow-x :scroll ;
+}
+
+
+
+.container, #Global-header, #Global-footer{
+        width: 100%;
+        min-width: auto;
+        padding: 0 20px; 
+    }
+
+      
+    .wrapper {
+       max-width: 1200px;
+       border: 1px solid #ddd;
+       display: flex;
+       overflow-x: scroll;
+       overflow-y: hidden;
+       scroll-snap-type: x mandatory;
+       box-sizing: border-box;
+    }
+
+    .wrapper #banner {
+        min-width: 100%; 
+        height: 100%; 
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; 
+        align-items: flex-end; 
+        scroll-snap-align: flex-end; 
+        text-align: flex-end;
+        padding: 1rem; 
+        box-sizing: border-box;
+    }
+    
+    .wrapper #banner article {
+        max-width: 80%; 
+    }
+    
+    .wrapper #banner h2 {
+        margin: 5rem; 
+    }
+    
+    .wrapper #banner p {
+        margin: 5rem; 
+    }
+    
+  
+   
+   
+
+
+   /*ALT INNENFOR KATEGORI*/
+
+
+   #kategori-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 1165px;
+    gap: 0px;
+    padding: 0px;
+    margin: 0px;
+    h2{
+        grid-column: 1 / 4;
+        margin: 0;
+    }
+
+    #kategori-grid section{
+        align-items: end;
+        padding: 1rem;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        h3{
+            margin: 0;
+            font-size: 16px;
+        }
+    }
+    #Vingard, #Cruise, #sprudlende, #Rod-vin, #Hvit-vin{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+        border-radius: 10px;
+        align-content: center;
+        align-items: center;
+    }
+    #Vingard{
+        max-width: 386px;
+        height: 200px;
+        border: 1px solid black;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        
+        
+        background-image: url('https://cdn.pixabay.com/photo/2023/12/24/16/43/autumn-8467482_1280.jpg');
+        background-size: cover;
+    }
+    #Cruise{
+       max-width: 386px;
+       height: 200px;
+       border: 1px solid black;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        
+        
+        background-image: url('https://cdn.pixabay.com/photo/2023/10/27/09/38/sea-8344717_1280.jpg');
+        background-size: cover;
+    }
+    
+    #sprudlende{
+        max-width: 386px;
+        height: 200px;
+        border: 1px solid black;
+       grid-column: 3 / 4;
+       grid-row: 1 / 2;
+        
+        background-image: url('https://cdn.pixabay.com/photo/2022/03/08/13/41/drinks-7055770_1280.jpg');
+        background-size: cover;
+    }
+    
+    #Rod-vin{
+        max-width: 864px;
+        height: 200px;
+        border: 1px solid black;
+        grid-column: 1 / span 3;
+        grid-row: 2 / 3;
+        
+        background-image: url('https://cdn.pixabay.com/photo/2015/07/18/13/14/wine-850337_1280.jpg');
+        background-size: cover;
+    }
+    
+    #Hvit-vin{
+       min-width: 300px;
+       height: 200px;
+        border: 1px solid black;
+        background-color: hsl(271, 52%, 72%);
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        justify-self: end;
+        
+        
+       
+        background-image: url('https://cdn.pixabay.com/photo/2017/09/26/16/44/wine-2789265_1280.jpg');
+        background-size: cover;
+    }
+    }
+
+
+
+
+/* ALT FOR HEADER */
+header ul li img{
+    width: 125px;
+ }
+#Global-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px; 
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        box-sizing: border-box;
+
+        i{
+            color: black;
+        }
+    }
+
+    .Meny-liste {
+        flex: 2; /* Centers nav list */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* Adds space between nav items */
+        list-style: none;
+    
+    }
+
+    .Ikon-liste {
+        flex: 1; 
+        display: flex;
+        align-items: center;
+        padding-left: 20px; 
+        list-style: none;
+        color: black;
+    }
+
+    .search-form, .Meny-liste, .Ikon-liste {
+        margin: 0;
+    }
+
+    .Meny-liste, .Ikon-liste{
+        flex-direction: row;
+        gap: 20px;
+    }
+
+ #Meny {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    #Global-header #Meny .Meny-liste li a{
+        color: black;
+        text-decoration: none;
+        list-style: none;
+    }
+    .search-form{
+        display: flex;
+        align-items: center; /* Align input and button vertically */
+        border: 1px solid black; /* Thin black border around the search form */
+        border-radius: 5px; /* Rounded corners */
+        overflow: hidden; /* Ensures child elements don’t overflow the parent */
+        min-width: 195px;
+        max-width: 300px; /* Optional: sets a maximum width for the search form */
+    }
+    
+    .search-form input{
+        flex: 1; /* Input takes up remaining space */
+        padding: 8px; /* Adjust padding for better spacing */
+        font-size: 14px; /* Slightly larger font for better visibility */
+        border: none; /* Remove individual border */
+        outline: none; /* Remove default focus outline */
+        border-radius: 0; /* Ensure no radius on the input to fit perfectly with the parent */
+    }
+    
+    .search-form button{
+        background-color: transparent; /* Transparent background for icon button */
+        border: none; /* Remove button border */
+        cursor: pointer; /* Pointer cursor for button */
+        padding: 8px; /* Padding for consistent size */
+        font-size: 16px; /* Optional: Adjust icon size */
+        display: flex; /* Center content inside the button */
+        align-items: center; /* Vertical alignment */
+        justify-content: center; 
+        color: black; 
+    }
+i{
+    justify-content: space-evenly ;
+
+}
+
+
+
+
+
+
+
+ /* ALT FOR ANMELDELSER */
+ #Andmeldelse-area{
+    display: flex;
+    overflow-y: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    gap: 5px;
+    box-sizing: border-box;
+ }
+.Andmeldelser{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.Andmeldelse-kort{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 10px; 
+    max-width: 289px; 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+}
+
+.Andmeldelse-kort img{
+    max-width: 150px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+/* ALT FOR PRODUKTER */
+#Produkt-area{
+    display: flex; /* Bruker flexbox for layout */
+    justify-content: space-between; /* Fordeler elementene jevnt med plass mellom dem */
+    flex-wrap: wrap; /* Tillater at elementene brytes til neste rad hvis det er nødvendig */
+    gap: 0.2rem; /* Legger til et gap på 1rem mellom elementene */
+}
+.produkt-kort img{
+    max-width: 150px;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+.produkt-kort{
+    max-width: 350px; 
+    min-width: 150px; 
+    width: 100%; 
+    box-shadow: 13px 9px 20px 0px #efefef; 
+    border-radius: 10px; 
+    padding: 1,5rem;
+    margin-top: 1rem;
+}
+
+.produkt-kort p{
+    justify-content: flex-start;
+}
+#Produkter{
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+    padding: 2rem;
+}
+.Navn-pris{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.stjerner{
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+}
+.Navn-pris a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ALT FOR ELEMENTER PÅ NETTSIDEN*/
+.button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem; /* Gir ekstra bredde for oval form */
+    background-color: white; /* Hvit bakgrunn */
+    color: black; /* Sort tekst */
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid black; /* Sort kant */
+    border-radius: 30px; /* Runde kanter for å skape oval form */
+    text-align: center;
+    text-decoration: none; /* Fjerner understrek */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* For glatte hover-effekter */
+}
+
+.button:hover {
+    background-color: black;
+    color: white; /* Omvendt farge for kontrast ved hover */
+}
+
+
+
+
+
+/* ALT FOR FOOTER */
+#Global-footer .Medier ul li{
+    list-style: none;
+    flex-direction: row;
+}
+#Global-footer .Snarveier a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+.footer-header img{
+    width: 125px;
+ }
+
+#Global-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    list-style: none;
+}
+.footer-header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+     align-items: center;
+    justify-content: space-around;
+   }
+   .footer-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+
+   }
+   .kontakt .Medier .Snarveier{
+   padding: 10px;
+   text-align: center;
+   }
+   .kontakt{
+    align-content: flex-start;
+   }
+   .Medier a{
+    list-style: none;
+    align-content: flex-end;
+    color: black;
+   }
 .Meny-liste, .Ikon-liste {
     flex-direction: row;
     gap: 20px;
@@ -734,79 +1230,32 @@ ul .Ikon-liste{
  }
 
 
-
-
-
-
-
 }
-@media only screen and (min-width: 426px) and (max-width: 767) {
-    #kategori-grid{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto repeat(3, 1fr);
-        gap: 1rem;
-        h2{
-            grid-column: 1 / 4;
-            margin: 0;
-        }
-    
-        section{
-            display: flex;
-            flex-wrap: wrap;
-            align-items: end;
-            h3{
-                margin: 0;
-                font-weight: 400;
-                font-size: 16px;
-            }
-        }
-        #Vingard, #Cruise, #sprudlende, #Rod-vin, #Hvit-vin{
 
-            border-radius: 10px;
-        }
-        #Vingard{
-            max-width: 386px;
-            background-color: hsl(146, 52%, 72%); 
-            grid-column: 1 / 2; 
-            grid-row: 2 / 2; 
-            background-image: url('https://cdn.pixabay.com/photo/2023/12/24/16/43/autumn-8467482_1280.jpg');
-            background-size: cover;
-        }
-        #Cruise{
-            max-width: 386px;
-            background-color: hsl(0, 68%, 50%); 
-            grid-column: 2 / 3; 
-            grid-row: 2 / 3; 
-            background-image: url('https://cdn.pixabay.com/photo/2023/10/27/09/38/sea-8344717_1280.jpg');
-            background-size: cover;
-        }
-        
-        #sprudlende{
-            max-width: 386px;
-            background-color: hsl(337, 52%, 72%); 
-            grid-column: 3 / 4;
-            grid-row: 2 / 4;
-            background-image: url('https://cdn.pixabay.com/photo/2022/03/08/13/41/drinks-7055770_1280.jpg');
-            background-size: cover;
-        }
-        
-        #Rod-vin{
-            max-width: 864px;
-            background-color: hsl(258, 39%, 26%);
-            grid-column: 1 / 3;
-            grid-row: 3 / 5;
-            background-image: url('https://cdn.pixabay.com/photo/2015/07/18/13/14/wine-850337_1280.jpg');
-            background-size: cover;
-        }
-        
-        #Hvit-vin{
-            max-width: 300px;
-            background-color: hsl(271, 52%, 72%);
-            grid-column: 3 / 4;
-            grid-row: 4 / 4;
-            background-image: url('https://cdn.pixabay.com/photo/2017/09/26/16/44/wine-2789265_1280.jpg');
-            background-size: cover;
-        }
-        }
+/* HANDLEKURV SIDE!!!*/
+
+.Shopping-produkter img{
+    max-width: 150px;
+}
+#Shoppingbag{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#breadcrumb{
+padding-top: 5px;
+}
+.Kasse-produkt{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.Kasse-produkt form{
+    align-self: end;
+}
+.Kasse-produkt aside{
+    align-content: center;
 }

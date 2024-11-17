@@ -12,36 +12,170 @@
 </head>
 
 <body>
+    
+    <header id="Global-header">
+        <nav id="Meny">
+          
+  
+  
+           <form action="#" method="get" class="search-form">
+                   <input type="text" placeholder="Søk produkter..." aria-label="Søkefelt">
+                   <button type="submit" aria-label="Søk">
+                       <i class="fa-solid fa-magnifying-glass"></i>
+                   </button>
+               </form>
+           
 
-     <header id="Global-header">  
-         <nav id="Meny">
-            <div id="Grid-container">
-   
-   
-            <form action="#" method="get" class="search-form">
-                    <input type="text" placeholder="Søk produkter..." aria-label="Søkefelt">
-                    <button type="submit" aria-label="Søk">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+           
+              
+                   <ul class="Meny-liste">
+                       <li><a href="index.html">Hjem</a></li>
+                       <li><a href="#Produkter">Produkter</a></li>
+                       <li><a href="index.html"><img src="https://img.freepik.com/premium-vector/beautiful-unique-logo-design-food-restaurant-company_1314480-881.jpg?semt=ais_hybrid" alt="Logo"></a></li>
+                       <li><a href="#Kategorier">Kategorier</a></li>
+                       <li><a href="#Global-footer">Kontakt oss</a></li>
+                   </ul>
+                   <ul class="Ikon-liste">
+                      <li> <a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                      <li> <a href="handlekurv.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                      <li> <a href="#"><i class="fa-solid fa-user"></i></a></li>
+                   </ul>
+            </nav> 
+         </section>
+        </header>
+        <section id="breadcrumb">
+            <a href="#"><i class="fa-solid fa-arrow-left">Fortsett og handle</i></a> 
+         </section>
+        <main>
+            <div id="Shoppingbag">
+            <h1>Kasse</h1>
+
+            <section>
+           <h2>1. SHOPPINGBAGEN DIN</h2>
+            
+                 <section class="Shopping-produkter">
+                     <article class="Kasse-produkt">
+                            <picture>
+                                <img src="https://cdn.pixabay.com/photo/2013/07/12/16/28/wine-150955_1280.png" alt="bilde av en rødvinsfalske med ChateauDeFrance som navn">
+                            </picture>
+
+                            <aside>
+                                <a href="#">ChateauDeFrance</a>
+                                <p>Kr 250</p>
+                                <p>Type: Rødvin</p>
+                            </aside>
+
+                            <form>
+                                <label for="Størelse">Størelse:</label>
+                                <select id="Wine" name="Wine">
+                                <option value="Extra-small">XS</option>
+                                <option value="Small">S</option>
+                                <option value="Medium">M</option>
+                                <option value="Large">L</option>
+                                <option value="Extra-large">XL</option>
+                                </select>
+
+                        <form>
+                            <label for="antall">Antall</label>
+                                <input type="number" value="1" min="1" max="10">
+                        </form>
+                  </article>
+
+          <article class="Kasse-produkt">
+                    <picture>
+                        <img src="https://cdn.pixabay.com/photo/2013/07/12/16/28/wine-150955_1280.png" alt="bilde av en rødvinsfalske med ChateauDeFrance som navn">
+                    </picture>
+
+                    <aside>
+                        <a href="#">ChateauDeFrance</a>
+                        <p>Kr 250</p>
+                        <p>Type: Rødvin</p>
+                    </aside>
+
+                    <form>
+                        <label for="Størelse">Størelse:</label>
+                        <select id="Wine" name="Wine">
+                        <option value="Extra-small">XS</option>
+                        <option value="Small">S</option>
+                        <option value="Medium">M</option>
+                        <option value="Large">L</option>
+                        <option value="Extra-large">XL</option>
+                        </select>
+
+                <form>
+                    <label for="antall">Antall</label>
+                        <input type="number" value="1" min="1" max="10">
                 </form>
-            
+        </article>
 
-            
-               
-                    <ul class="Meny-liste">
-                        <li><a href="#">Hjem</a></li>
-                        <li><a href="#">Produkter</a></li>
-                        <li><a href="index.html"><img src="https://img.freepik.com/premium-vector/beautiful-unique-logo-design-food-restaurant-company_1314480-881.jpg?semt=ais_hybrid" alt="Logo"></a></li>
-                        <li><a href="#">Kategorier</a></li>
-                        <li><a href="#Global-footer">Kontakt oss</a></li>
-                    </ul>
-                    <ul class="Ikon-liste">
-                       <li> <a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                       <li> <a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                       <li> <a href="#"><i class="fa-solid fa-user"></i></a></li>
-                    </ul>
+
+        <article class="Kasse-produkt">
+                        <picture>
+                            <img src="https://cdn.pixabay.com/photo/2013/07/12/16/28/wine-150955_1280.png" alt="bilde av en rødvinsfalske med ChateauDeFrance som navn">
+                        </picture>
+
+                        <aside>
+                            <a href="#">ChateauDeFrance</a>
+                            <p>Kr 250</p>
+                            <p>Type: Rødvin</p>
+                        </aside>
+
+                        <form>
+                            <label for="Størelse">Størelse:</label>
+                            <select id="Wine" name="Wine">
+                            <option value="Extra-small">XS</option>
+                            <option value="Small">S</option>
+                            <option value="Medium">M</option>
+                            <option value="Large">L</option>
+                            <option value="Extra-large">XL</option>
+                            </select>
+
+                    <form>
+                        <label for="antall">Antall</label>
+                            <input type="number" value="1" min="1" max="10">
+                    </form>
+            </article>
+                 </section>
+            </section>
+
+
+
+             </div>
+        </main>
+
+
+
+
+        <footer id="Global-footer">
+            <article class="footer-header">
+           <h2><a href="index.html"><img src="https://img.freepik.com/premium-vector/beautiful-unique-logo-design-food-restaurant-company_1314480-881.jpg?semt=ais_hybrid" alt="Logo"></a></h2>
+            <p>Den beste og langtidslagrede vinen finner du her hos oss! skjekk gjerne også oss ut på sosiale medier linket nedenfor</p>
+            </article>
         
+                <section class="footer-info">
+                    <section class="Kontakt">
+                    <h3>Kontakt</h3>
+                <p><i class="fa-solid fa-location-dot"></i><span>Adresse:</span> Strandbergveien 32, 4790 Lillesand</p>
+                <p><i class="fa-solid fa-phone"></i><span>Telefon:</span> 950 37 477</p>
+                <p><i class="fa-solid fa-envelope"></i><span>Email:</span> Solskinn.vingård@gmail.com</p>
+                <p><i class="fa-solid fa-clock"></i><span>Åpningstider:</span> man-fre 10-23!</p>
+                    </section>
         
-                 </div>
-             </nav> 
-         </header>
+                    <section class="Snarveier">
+                    <h3>Snarveier</h3>
+                    <a href="#">Produkter</a>
+                    <a href="#">Kategorier</a>
+                    <a href="#">Kontakt oss</a>
+                    </section>
+        
+                    <section class="Medier">
+                <h3>Sosiale medier</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://no.pinterest.com"><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href="https://www.facebook.com/?_rdr"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://no.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                     </section>
+        </footer>
+</body>
