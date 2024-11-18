@@ -1,5 +1,7 @@
 
-
+*{
+    box-sizing: border-box;
+}
 /*ALT FOR MOBIL*/
 
 @media only screen and (max-width: 426px){
@@ -150,16 +152,22 @@ html{
         flex-wrap: wrap;
         align-items: end;
         flex-direction: column;
-        h3{
+        h2{
             margin: 0;
             font-weight: 400;
             font-size: 16px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
         }
     }
     #Vingard, #Cruise, #sprudlende, #Rod-vin, #Hvit-vin{
         padding: 3rem;
         border-radius: 10px;
+        width: 100%;
     }
+    
     #Vingard{
         max-width: 386px;
         background-color: hsl(146, 52%, 72%); 
@@ -188,10 +196,14 @@ html{
     }
     
     #Hvit-vin{
-        max-width: 300px;
+        width: 100%;
         background-color: hsl(271, 52%, 72%);
         background-image: url('https://cdn.pixabay.com/photo/2017/09/26/16/44/wine-2789265_1280.jpg');
         background-size: cover;
+
+    }
+    #kategori-grid section a{
+        color: white;
     }
     }
 
@@ -309,7 +321,7 @@ footer h2 img{
 
 
 /* ALT FOR TABLETT*/
-@media only screen and (min-width: 427px) and (max-width: 767px) {
+@media only screen and (min-width: 427px) and (max-width: 895px) {
     html{
         font-family: sans-serif;
     }
@@ -745,7 +757,9 @@ footer h2 img{
 
  
 /*ALT FOR DESKTOP*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 895px)  {
+    
+    
     html{
         font-family: sans-serif;
     }
@@ -844,98 +858,78 @@ footer h2 img{
    #kategori-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    max-width: 1165px;
-    gap: 0px;
-    padding: 0px;
-    margin: 0px;
+    grid-template-rows: auto repeat(3, 1fr);
+    gap: 1rem;
+    height: 500px;
     h2{
         grid-column: 1 / 4;
         margin: 0;
     }
 
-    #kategori-grid section{
+    section{
+        display: flex;
+        flex-wrap: wrap;
         align-items: end;
-        padding: 1rem;
-        border-radius: 10px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         h3{
             margin: 0;
+            font-weight: 400;
             font-size: 16px;
         }
     }
     #Vingard, #Cruise, #sprudlende, #Rod-vin, #Hvit-vin{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0px;
+
         border-radius: 10px;
-        align-content: center;
-        align-items: center;
     }
     #Vingard{
         max-width: 386px;
-        height: 200px;
-        border: 1px solid black;
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-        
-        
+        background-color: hsl(146, 52%, 72%); 
+        grid-column: 1 / 2; 
+        grid-row: 2 / 2; 
         background-image: url('https://cdn.pixabay.com/photo/2023/12/24/16/43/autumn-8467482_1280.jpg');
         background-size: cover;
     }
     #Cruise{
-       max-width: 386px;
-       height: 200px;
-       border: 1px solid black;
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-        
-        
+        max-width: 386px;
+        background-color: hsl(0, 68%, 50%); 
+        grid-column: 2 / 3; 
+        grid-row: 2 / 3; 
         background-image: url('https://cdn.pixabay.com/photo/2023/10/27/09/38/sea-8344717_1280.jpg');
         background-size: cover;
     }
     
     #sprudlende{
         max-width: 386px;
-        height: 200px;
-        border: 1px solid black;
-       grid-column: 3 / 4;
-       grid-row: 1 / 2;
-        
+        background-color: hsl(337, 52%, 72%); 
+        grid-column: 3 / 4;
+        grid-row: 2 / 4;
         background-image: url('https://cdn.pixabay.com/photo/2022/03/08/13/41/drinks-7055770_1280.jpg');
         background-size: cover;
     }
     
     #Rod-vin{
         max-width: 864px;
-        height: 200px;
-        border: 1px solid black;
-        grid-column: 1 / span 3;
-        grid-row: 2 / 3;
-        
+        background-color: hsl(258, 39%, 26%);
+        grid-column: 1 / 3;
+        grid-row: 3 / 5;
         background-image: url('https://cdn.pixabay.com/photo/2015/07/18/13/14/wine-850337_1280.jpg');
         background-size: cover;
     }
     
     #Hvit-vin{
-       min-width: 300px;
-       height: 200px;
-        border: 1px solid black;
+        max-width: 400px;
         background-color: hsl(271, 52%, 72%);
         grid-column: 3 / 4;
-        grid-row: 2 / 3;
-        justify-self: end;
-        
-        
-       
+        grid-row: 4 / 4;
         background-image: url('https://cdn.pixabay.com/photo/2017/09/26/16/44/wine-2789265_1280.jpg');
         background-size: cover;
     }
     }
 
 
+#kategori-grid a{
+    color: white;
+    text-decoration: none;
+}
 
 
 /* ALT FOR HEADER */
@@ -969,7 +963,6 @@ header ul li img{
     }
 
     .Ikon-liste {
-        flex: 1; 
         display: flex;
         align-items: center;
         padding-left: 20px; 
@@ -1191,6 +1184,7 @@ gap: 1rem;
     padding: 20px;
     text-align: center;
     list-style: none;
+    background-image: linear-gradient(rgb(113, 113, 113), rgba(255, 255, 247, 0.053));
 }
 .footer-header{
     display: flex;
@@ -1212,6 +1206,7 @@ gap: 1rem;
    }
    .kontakt{
     align-content: flex-start;
+    width: 100%;
    }
    .Medier a{
     list-style: none;
@@ -1228,6 +1223,7 @@ gap: 1rem;
     justify-content: center;
     justify-content: space-evenly;
  }
+
 
 
 }
@@ -1261,21 +1257,30 @@ gap: 1rem;
 #Shoppingbag{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-self: center;
+    padding: 10px;
+    max-width: 800px;
 }
 #breadcrumb{
-padding-top: 5px;
+a{
+    text-decoration: none;
+}
+i{
+    padding-right: 5px;
+}
 }
 .Kasse-produkt{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    max-width: 800px;
     border: 1px solid;
     border-radius: 10px;
     margin-top: 10px;
 }
 .Kasse-produkt form{
-    align-self: end;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
 }
 .Kasse-produkt aside{
     align-content: center;
@@ -1285,17 +1290,20 @@ padding-top: 5px;
 
 
 
+
 /* ALT INNENFOR "DINE OPPLYSNINGER"*/
 .Leveringsadresse{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
     max-width: 1200px;
+    box-sizing: border-box;
 }
 .Leveringsadresse p{
-    grid-column: 1 / -1;
+    flex: 1 1 100%;
     font-size: 20px;
     margin-bottom: 10px;
     font-weight: bold;
@@ -1303,43 +1311,71 @@ padding-top: 5px;
 .Leveringsadresse input {
     padding: 10px;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     box-sizing: border-box;
     width: 100%;
 }
-article{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.Navn-felt{
+    display: flex;
+    flex: 1 1 50%;
     gap: 1rem;
-    width: 100%;
 }
-.Navn-felt form .Post-felt form{
-display: flex;
-flex-direction: column;
-gap: 5px;
+.Navn-felt form{
+    flex: 1 1 50%;
+    flex-direction: column;
+    gap: 5px;
 }
 .Adresse-felt{
-    grid-column: 1 / -1;
+    flex: 1 1 100%;
+    gap: 5px;
+    flex-direction: column;
 }
-
-
-
+.Post-felt{
+    display: flex;
+    flex: 1 1 100%;
+    gap: 1rem;
+}
+.Post-felt form{ 
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: column;
+}
 .Kontaktinformasjon{
 display: flex;
 flex-direction: column;
+padding: 10px;
 gap: 1rem;
 width: 100%;
 max-width: 1200x;
 margin: 20px auto;
-padding: 20px;
 border-radius: 10px;
 align-content: flex-start;
 }
+.link{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
 .Kontaktinformasjon input{
     width: 100%;
-    padding: 0.5rem;
+    padding: 10px;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     box-sizing: border-box;
 }
+.Telefom-felt{
+    margin-top: 1rem;
+}
+.Kontakt-knapp{
+    width: 100%;
+    background-color: #2e2e2e;
+    color: white;
+    margin-top: 1.5rem;
+    font-size: large;
+    padding: 15px;
+}
 
+/* ALT INNENFOR "LEVERING"*/
+
+
+/* ALT INNENFOR "BETALING"*/

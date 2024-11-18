@@ -44,16 +44,17 @@
          </section>
         </header>
         <section id="breadcrumb">
-            <a href="#"><i class="fa-solid fa-arrow-left">Fortsett og handle</i></a> 
+            <a href="#"><i class="fa-solid fa-arrow-left"></i>Fortsett og handle</a> 
          </section>
         <main>
             <div id="Shoppingbag">
             <h1>Kasse</h1>
 
-            <section>
-           <h2>1. SHOPPINGBAGEN DIN</h2>
+            <section id="Kasse-">
+           
             
                  <section class="Shopping-produkter">
+                    <h2>1. SHOPPINGBAGEN DIN</h2>
                      <article class="Kasse-produkt">
                             <picture>
                                 <img src="https://cdn.pixabay.com/photo/2013/07/12/16/28/wine-150955_1280.png" alt="bilde av en rødvinsfalske med ChateauDeFrance som navn">
@@ -104,7 +105,7 @@
 
                 <form>
                     <label for="antall">Antall</label>
-                        <input type="number" value="1" min="1" max="10">
+                        <input type="number" value="1" min="1" max="10"/>
                 </form>
         </article>
 
@@ -149,14 +150,14 @@
                         <article class="Navn-felt">
                             <form>
                             <label for="Fornavn" value="Kristoffer" id="Fornavn">Fornavn</label>
-                            <input type="text">
+                            <input type="text" placeholder="Ola*">
                             </form>
                         
 
 
                         <form>
                             <label for="Etternavn" id="Etteravn">Etternavn</label>
-                            <input type="text">
+                            <input type="text" placeholder="Nordmann*">
                          </form>
                         </article>
 
@@ -164,7 +165,7 @@
                         <article class="Adresse-felt">
                          <form>
                             <label for="Gateadresse" id="Gateadresse">Gateadresse</label>
-                            <input type="text">
+                            <input type="text" placeholder="Vestlifaret 7a*">
                          </form>
                         </article>
 
@@ -173,13 +174,13 @@
                         <article class="Post-felt">
                          <form>
                             <label for="Postnummer">Postnummer</label>
-                            <input type="number">
+                            <input type="number" placeholder="1832">
                          </form>
 
 
                          <form>
                             <label for="Poststed">Poststed</label>
-                            <input type="text">
+                            <input type="text" placeholder="Lillesand">
                          </form>
                         </article>
                 </section>
@@ -192,23 +193,109 @@
                 <h2>Kontaktinformasjon</h2>
 
 
-                <article class="Epost-felt">
-                    <form>
-                        <label for="Epost">Epost</label>
-                        <input type="email">
-                    </form>
+                    <article class="Kontakt-felt">
+                        <form>
+                            <label for="Epost">Epost</label>
+                            <input type="email" placeholder="Ola.Nordmann@gmail.com">
+                        </form>
 
 
-                    <form class="Telefon-felt">
-                        <label for="Telefon-nummer">Telefon</label>
-                        <input type="number">
-                    </form>
-                </article>
+                        <form class="Telefon-felt">
+                            <label for="Telefon-nummer">Telefon</label>
+                            <input type="number" placeholder="+47960***66">
+                        </form>
 
-
+                        <button class="Kontakt-knapp">Lagre</button>
+                        <aside class="link">
+                        <a href="#">Avbryt</a>
+                         </aside>
+                    </article>
                </section>
-
             </section>
+
+                <section>
+                    <h2>3. Levering</h2>
+
+
+                    <section>
+                        <h3>Leveringsvalg</h3>
+                        <form>
+                            <fieldset>
+                                
+                                <label> 
+                                    Ekspress Hjemlevering
+                                    <input type="radio"  name="levering" required>
+                                    <p>59 kr</p>
+                                <p class="Virkedager">3-4 Virkedager</p>
+                                <p>Bestill herdag før 08.00* for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag. *For levering postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager </p>
+                              </label>
+                            
+                        
+                                <label>
+                                    Ekspress Pakke til utleveringssted 
+                                    <input type="radio"  name="levering" required>
+                                    <p>59 kr</p>
+                                <p class="Virkedager">1-3 Virkedager</p>
+                               </label>
+                            
+                            
+                               <label>
+                                    Standard Hjemmelevering
+                                    <input type="radio" name="levering" required>
+                                    <p>Gratis</p>
+                                <p class="Virkedager">4-7 Virkedager</p>
+                                <p>Levers hjem til deg før frokost mandag til lørdag innen 4-7 arbeidsdager</p>
+
+                               </label>
+                            </fieldset>
+                        </form>    
+                    </section>
+                </section>
+
+
+                <section>
+                    <h2>4. Betaling</h2>
+
+                    <section>
+                        <h3>Betal med kort</h3>
+
+                        <form>
+                            <label for="Kort-nummer">Kortnummer</label>
+                            <input type="number" placeholder="492521*****3243">
+                        </form>
+
+
+
+                        <form>
+                            <label for="Utløpsdato">Utløpsdato</label>
+                            <input type="date" placeholder="dd.mm.åååå">
+                        </form>
+
+
+
+                        <form>
+                            <label for="CVC/CVV">CVC/CVV</label>
+                            <input type="number" placeholder="CVC/CVV">
+                        </form>
+                    </section>
+
+                    <article class="Fullfør-kjøp">
+                    <p>Å betale inkl. mva.</p>
+                    <h3>1 299kr</h3>
+                    <button>Fullfør kjøp</button>
+
+
+                    <form>
+                        <label for="Nyhetsbrev">Ja takk! Send Nyhetsbrev til meg.</label>
+                        <input type="checkbox">
+                    </form>
+
+                    <form>
+                        <label for="tekstmelding">Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.</label>
+                        <input type="checkbox">
+                    </form>
+                  </article>
+                </section>
 
              </div>
         </main>
