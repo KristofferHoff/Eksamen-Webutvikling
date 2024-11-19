@@ -28,7 +28,7 @@ html{
      flex-direction: column;
      gap: 25px;
      width: 100%;
-     text-align: left;
+     text-align: center;
      
  
  }
@@ -310,8 +310,14 @@ footer h2 img{
 
 
 
+/* ALT INNENFOR KASSE SIDEN!!*/
 
-
+.Shopping-produkter {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    max-width: 780px;
+}
 
 
 
@@ -343,7 +349,12 @@ footer h2 img{
 }
 
 
-
+.Shopping-produkter {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    max-width: 780px;
+}
 
 
 
@@ -530,7 +541,7 @@ footer h2 img{
      flex-direction: column;
      gap: 25px;
      width: 100%;
-     text-align: left;
+     text-align: center;
      
  
  }
@@ -541,11 +552,7 @@ footer h2 img{
      align-content: space-evenly;
      list-style: none;
  }
- .Meny-liste, .Ikon-liste {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-}
+
  .search-form{
     display: flex;
     width: 100%;
@@ -755,9 +762,14 @@ footer h2 img{
 
 }
 
+/* ALT FOR KASSE SIDE!!!*/
+
+
+
+
  
 /*ALT FOR DESKTOP*/
-@media only screen and (min-width: 895px)  {
+@media only screen and (min-width: 896px)  {
     
     
     html{
@@ -1260,6 +1272,7 @@ gap: 1rem;
     justify-self: center;
     padding: 10px;
     max-width: 800px;
+    align-items: center;
 }
 #breadcrumb{
 a{
@@ -1284,6 +1297,11 @@ i{
 }
 .Kasse-produkt aside{
     align-content: center;
+}
+.Shopping-produkter{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
 }
 
 
@@ -1376,6 +1394,122 @@ align-content: flex-start;
 }
 
 /* ALT INNENFOR "LEVERING"*/
+.Levering-felt{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #cccccce0;
+    border-radius: 8px;
+}
+.Levering-felt article {
+    flex: 1 1 calc(33.33% - 1rem); 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f9f9f9;
+}
+.Levering-felt article label {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.Ekspress-hjem label {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap;
+    gap: 1rem; 
+}
+.Ekspress-ut label {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap;
+    gap: 1rem; 
+}
+.Pris{
+    justify-content: end;
+    display: flex;
+    margin-left: auto;
+}
+.Virkedager {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+    width: 100%;
+}
+
 
 
 /* ALT INNENFOR "BETALING"*/
+.Betaling{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+.Betaling input {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.Betaling p{
+    flex: 1 1 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Betaling article {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+.Kort-nummer{
+    flex: 1 1 100%;
+    gap: 5px;
+   
+}
+.Dato .CVC{
+    display: flex;
+    flex: 1 1 100%;
+    gap: 1rem;
+}
+.Dato form .CVC form{
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: column;
+    gap: 1rem;
+}
+.Dato{
+    display: flex;
+    flex: 1 1 50%;
+    gap: 1rem;
+}
+
+
+
+
+.CVC{
+    display: flex;
+    flex: 1 1 100%;
+    gap: 1rem;
+}
+
+
