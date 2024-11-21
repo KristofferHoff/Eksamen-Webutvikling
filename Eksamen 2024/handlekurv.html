@@ -41,7 +41,6 @@
                       <li> <a href="#"><i class="fa-solid fa-user"></i></a></li>
                    </ul>
             </nav> 
-         </section>
         </header>
         <section id="breadcrumb">
             <a href="#"><i class="fa-solid fa-arrow-left"></i>Fortsett og handle</a> 
@@ -50,7 +49,6 @@
             <div id="Shoppingbag">
             <h1>Kasse</h1>
 
-            <section class="Innhold-boks">
             
                  <section class="Shopping-produkter">
                     <h2>1. SHOPPINGBAGEN DIN</h2>
@@ -63,22 +61,24 @@
                                 <a href="#">ChateauDeFrance</a>
                                 <p>Kr 250</p>
                                 <p>Type: Rødvin</p>
-                            </aside>
+                            
 
                             <form>
                                 <label for="Størelse">Størelse:</label>
-                                <select id="Wine" name="Wine">
+                                <select name="Wine">
                                 <option value="Extra-small">XS</option>
                                 <option value="Small">S</option>
                                 <option value="Medium">M</option>
                                 <option value="Large">L</option>
                                 <option value="Extra-large">XL</option>
                                 </select>
+                            </form>
 
                         <form>
                             <label for="antall">Antall</label>
                                 <input type="number" value="1" min="1" max="10">
                         </form>
+                    </aside>
                   </article>
 
           <article class="Kasse-produkt">
@@ -90,22 +90,23 @@
                         <a href="#">ChateauDeFrance</a>
                         <p>Kr 250</p>
                         <p>Type: Rødvin</p>
-                    </aside>
+                    
 
                     <form>
                         <label for="Størelse">Størelse:</label>
-                        <select id="Wine" name="Wine">
+                        <select name="Wine">
                         <option value="Extra-small">XS</option>
                         <option value="Small">S</option>
                         <option value="Medium">M</option>
                         <option value="Large">L</option>
                         <option value="Extra-large">XL</option>
                         </select>
-
+                    </form>
                 <form>
                     <label for="antall">Antall</label>
                         <input type="number" value="1" min="1" max="10"/>
                 </form>
+            </aside>
         </article>
 
 
@@ -118,29 +119,30 @@
                             <a href="#">ChateauDeFrance</a>
                             <p>Kr 250</p>
                             <p>Type: Rødvin</p>
-                        </aside>
+                        
 
                         <form>
                             <label for="Størelse">Størelse:</label>
-                            <select id="Wine" name="Wine">
+                            <select name="Wine">
                             <option value="Extra-small">XS</option>
                             <option value="Small">S</option>
                             <option value="Medium">M</option>
                             <option value="Large">L</option>
                             <option value="Extra-large">XL</option>
                             </select>
-
+                        </form>
                     <form>
                         <label for="antall">Antall</label>
                             <input type="number" value="1" min="1" max="10">
                     </form>
+                </aside>
             </article>
                  </section>
             </section>
 
 
 
-            <section>
+            <section class="opplysninger">
                 <h2>2. Dine opplysninger</h2>
 
                 <section class="Leveringsadresse">
@@ -189,7 +191,7 @@
 
 
                 <section class="Kontaktinformasjon">
-                <h2>Kontaktinformasjon</h2>
+                <p>Kontaktinformasjon</p>
 
 
                     <article class="Kontakt-felt">
@@ -204,7 +206,7 @@
                             <input type="number" placeholder="+47960***66">
                         </form>
 
-                        <button class="Kontakt-knapp">Lagre</button>
+                        <form type="submit" class="Kontakt-knapp">Lagre</form>
                         <aside class="link">
                         <a href="#">Avbryt</a>
                          </aside>
@@ -212,15 +214,15 @@
                </section>
             </section>
 
-                <section>
+                <section class="Levering">
                     <h2>3. Levering</h2>
 
 
                     <section>
-                        <h3>Leveringsvalg</h3>
+                     
                         <form>
                             <fieldset class="Levering-felt">
-                                
+                                   <h3>Leveringsvalg</h3>
                                 <article class="Ekspress-hjem">
                                         <label> 
                                             Ekspress Hjemlevering
@@ -233,7 +235,7 @@
                         
                                 <article class="Ekspress-ut">
                                     <label>
-                                        Ekspress Pakke til utleveringssted 
+                                        Ekspress Pakke utleveringssted 
                                         <input type="radio"  name="levering" required>
                                         <p class="Pris">59 kr</p>
                                     <p class="Virkedager">1-3 Virkedager</p>
@@ -256,7 +258,7 @@
                 </section>
 
 
-                <section>
+                <section id="Betaling-felt">
                     <h2>4. Betaling</h2>
 
                     <section class="Betaling">
@@ -271,14 +273,14 @@
 
 
 
-                       <article class="Utløpsdato">
+                       <article class="Dato-CVC">
                         <form>
                             <label for="Utløpsdato">Utløpsdato</label>
                             <input type="date" placeholder="dd.mm.åååå">
                         </form>
-                    </article>
+                    
 
-                    <article class="CVC">
+                    
                         <form>
                             <label for="CVC/CVV">CVC/CVV</label>
                             <input type="number" placeholder="CVC/CVV">
@@ -287,22 +289,30 @@
 
                     </section>
 
-                    <article class="Fullfør-kjøp">
-                    <p>Å betale inkl. mva.</p>
-                    <h3>1 299kr</h3>
-                    <button class="Kontakt-knapp">Fullfør kjøp</button>
+                   <article class="Fullfør-betaling">
+                        <form>
+                            <article></article>
+                        <p>Å betale inkl. mva.</p>
+                        <h3>1 299kr</h3>
+                        
+                            <input type="submit" class="Kontakt-knapp" value="Fullfør kjøp">
+                        
+                        <p>Du bekrefter herved at opplysningene og dokumentene du har
+                            oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
+                            retten til å heve eller avslutte avtaleforholdet dersom det foreligger
+                            uriktige eller ufullstendige opplysninger.</p>
 
+                            <section>
+                                <label for="Nyhetsbrev"> Ja takk! Send Nyhetsbrev til meg.</label>
+                                <input type="checkbox">
+                           </section>
 
-                    <form>
-                        <label for="Nyhetsbrev">Ja takk! Send Nyhetsbrev til meg.</label>
-                        <input type="checkbox">
-                    </form>
-
-                    <form>
-                        <label for="tekstmelding">Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.</label>
-                        <input type="checkbox">
-                    </form>
-                  </article>
+                           <section>
+                                <label for="tekstmelding">Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.</label>
+                                <input type="checkbox">
+                          </section>
+                        </form>
+              </article>
                 </section>
 
              </div>
