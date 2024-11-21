@@ -58,8 +58,8 @@
                             </picture>
 
                             <aside>
-                                <a href="#">ChateauDeFrance</a> 
                                <p id="Produkt-ikon"> <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-trash"></i> </p>
+                               <a href="#">ChateauDeFrance</a> 
                                 <p>Kr 250</p>
                                 <p>Type: Rødvin</p>
                             
@@ -73,11 +73,11 @@
                                 <option value="Large">L</option>
                                 <option value="Extra-large">XL</option>
                                 </select>
-                            </form>
+                        
 
-                        <form>
+                        
                             <label for="Antall">Antall</label>
-                                <input type="number" value="1" min="1" max="10" id="Antall">
+                            <input type="number" value="1" min="1" max="10" id="Antall">
                         </form>
                         
                     </aside>
@@ -89,6 +89,7 @@
                     </picture>
 
                     <aside>
+                        <p id="Produkt-ikon"> <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-trash"></i> </p>
                         <a href="#">ChateauDeFrance</a>
                         <p>Kr 250</p>
                         <p>Type: Rødvin</p>
@@ -103,11 +104,11 @@
                         <option value="Large">L</option>
                         <option value="Extra-large">XL</option>
                         </select>
-                    </form>
-                <form>
-                    <label for="Antall-2">Antall</label>
+                    
+                
+                         <label for="Antall-2">Antall</label>
                         <input type="number" value="1" min="1" max="10" id="Antall-2">
-                </form>
+                  </form>
             </aside>
         </article>
 
@@ -118,6 +119,7 @@
                         </picture>
 
                         <aside>
+                            <p id="Produkt-ikon"> <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-trash"></i> </p>
                             <a href="#">ChateauDeFrance</a>
                             <p>Kr 250</p>
                             <p>Type: Rødvin</p>
@@ -132,11 +134,11 @@
                             <option value="Large">L</option>
                             <option value="Extra-large">XL</option>
                             </select>
-                        </form>
-                    <form>
-                        <label for="Antall-3">Antall</label>
+                        
+                    
+                            <label for="Antall-3">Antall</label>
                             <input type="number" value="1" min="1" max="10" id="Antall-3">
-                    </form>
+                        </form>
                 </aside>
             </article>
                  </section>
@@ -228,24 +230,39 @@
                             <fieldset class="Levering-felt">
                                    <h3>Leveringsvalg</h3>
                                 <article class="Ekspress-hjem">
-                                        <label for="Ekspress-hjemlevering"> Ekspress Hjemlevering </label>
+
+                                            <section class="Levering-knapp">
+
                                             <input type="radio"  name="levering" id="Ekspress-hjemlevering" required>
-                                            <p class="Pris">59 kr</p>
+                                            <label for="Ekspress-hjemlevering"> Ekspress Hjemlevering </label>
+                                            <p class="Pris">59 kr <i class="fa-solid fa-truck-fast"></i></p>
+
+                                            </section>
+
                                         <p class="Virkedager">3-4 Virkedager</p>
                                         <p>Bestill herdag før 08.00* for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag. *For levering postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager </p>
                                 </article>
                         
                                 <article class="Ekspress-ut">
-                                    <label for="Ekspress-utleveringsted"> Ekspress utleveringssted </label>
+
+                                        <section class="Levering-knapp">
+
+                                        <label for="Ekspress-utleveringsted"> Ekspress utleveringssted </label>
                                         <input type="radio"  name="levering" id="Ekspress-utleveringsted" required>
-                                        <p class="Pris">59 kr</p>
+                                        <p class="Pris">59 kr <i class="fa-brands fa-dhl"></i></p>
+
+                                        </section>
                                     <p class="Virkedager">1-3 Virkedager</p>
                                </article>
 
                                <article class="Hjem">
-                               <label for="Hjemlevering">Standard Hjemmelevering</label>
+                                <section class="Levering-knapp">
+
+                                    <label for="Hjemlevering">Standard Hjemmelevering</label>
                                     <input type="radio" name="levering" id="Hjemlevering" required>
-                                    <p class="Pris">Gratis</p>
+                                    <p class="Pris">Gratis <i class="fa-solid fa-box"></i></p>
+
+                                </section>
                                 <p class="Virkedager">4-7 Virkedager</p>
                                 <p>Levers hjem til deg før frokost mandag til lørdag innen 4-7 arbeidsdager</p>
                             </article>
@@ -260,7 +277,7 @@
                     <h2>4. Betaling</h2>
 
                     <section class="Betaling">
-                        <h3>Betal med kort</h3>
+                        <h3>Betal med kort <i class="fa-solid fa-credit-card"></i></h3>
                         
                         <article class="Kort-nummer">
                         <form>
