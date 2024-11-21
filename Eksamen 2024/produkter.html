@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fontawesome.com/icons/cart-shopping?f=classic&s=solid">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link a href="index.html">
-    <link a href="handlekurv.html">
 
     
     
@@ -15,36 +13,234 @@
 </head>
 
 <body>
+    
 
-     <header id="Global-header">  
-         <nav id="Meny">
-            <div id="Grid-container">
-   
-   
-            <form action="#" method="get" class="search-form">
-                    <input type="text" placeholder="Søk produkter..." aria-label="Søkefelt">
-                    <button type="submit" aria-label="Søk">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-            
+    <header id="Global-header">
+        <nav id="Meny">
+          
+  
+  
+           <form action="#" method="get" class="search-form">
+                   <input type="text" placeholder="Søk produkter..." aria-label="Søkefelt">
+                   <button type="submit" aria-label="Søk">
+                       <i class="fa-solid fa-magnifying-glass"></i>
+                   </button>
+               </form>
+           
 
-            
-               
-                    <ul class="Meny-liste">
-                        <li><a href="#">Hjem</a></li>
-                        <li><a href="#">Produkter</a></li>
-                        <li><a href="index.html"><img src="https://img.freepik.com/premium-vector/beautiful-unique-logo-design-food-restaurant-company_1314480-881.jpg?semt=ais_hybrid" alt="Logo"></a></li>
-                        <li><a href="#">Kategorier</a></li>
-                        <li><a href="#Global-footer">Kontakt oss</a></li>
-                    </ul>
-                    <ul class="Ikon-liste">
-                       <li> <a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                       <li> <a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                       <li> <a href="#"><i class="fa-solid fa-user"></i></a></li>
-                    </ul>
+           
+              
+                   <ul class="Meny-liste">
+                       <li><a href="index.html">Hjem</a></li>
+                       <li><a href="#Produkter">Produkter</a></li>
+                       <li><a href="index.html"><img src="https://img.freepik.com/premium-vector/beautiful-unique-logo-design-food-restaurant-company_1314480-881.jpg?semt=ais_hybrid" alt="Logo"></a></li>
+                       <li><a href="#Kategorier">Kategorier</a></li>
+                       <li><a href="#Global-footer">Kontakt oss</a></li>
+                   </ul>
+                   <ul class="Ikon-liste">
+                      <li> <a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                      <li> <a href="handlekurv.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                      <li> <a href="#"><i class="fa-solid fa-user"></i></a></li>
+                   </ul>
+            </nav> 
+        </header>
+
+
+
         
+     <main>
+        <div id="Flexbox">
+        <section class="Produkt-area">
+            <article id="Main-produkt">
+                    <section class="Lite-bilde">
+                        <img src="https://cdn.pixabay.com/photo/2018/02/25/11/17/wine-3180220_1280.jpg" alt="Bilde av en rødvin med navn Swartland">
+                        <img src="https://cdn.pixabay.com/photo/2018/02/25/11/17/wine-3180220_1280.jpg" alt="Bilde av en rødvin med navn Swartland">
+                        <img src="https://cdn.pixabay.com/photo/2018/02/25/11/17/wine-3180220_1280.jpg" alt="Bilde av en rødvin med navn Swartland">
+
+                    </section>
+                    <section class="Stort-bilde">
+                        <img src="https://cdn.pixabay.com/photo/2018/02/25/11/17/wine-3180220_1280.jpg" alt="Bilde av en rødvin med navn Swartland">
+                    </section>
+            </article>
+
+            <article class="Produkt-info">
+                <section>
+                    <h2>Piontage</h2>
+                    <p><a href="#">SWARTLAND</a></p>
+                    <p>500 kr inkl.mva.</p>
+                    <p>Type: <bold>Rødvin</bold></p>
+                </section>
+
+                <section>
+                    <form class="Størelse-form">
+                        <label for="Størelse-velger"></label>
+                        <select name="Wine" id="Størelse-velger">
+                        <option value="Velg" selected disabled hidden>Velg Størrelse</option>
+                        <option value="Extra-small">XS</option>
+                        <option value="Small">S</option>
+                        <option value="Medium">M</option>
+                        <option value="Large">L</option>
+                        <option value="Extra-large">XL</option>
+                        </select>
+                    </form>
+
+                    <form id="Knapper">
+                        <label for="Handlekurv-knapp"></label>
+                        <input type="submit" class="Handlekurv-knapp" value="Legg i handlekurv">
+
+                        <button class="Favoritt-knapp"><i class="fa-regular fa-heart"></i></button>
+                    </form>
+                    
+                
+                </section>
+            </article>
+        </section>
+        <section class="Lignende-produkt-area">
+            <h2>Lignende-produkter</h2>
+           <p> <a href="#Produkt-area">Se flere lignende produkter</a> </p>
+        </section>
+        <section class="Lignende-produkter">
+            <article class="produkt-kort-slider">
+                <picture>
+                    <img src="https://cdn.pixabay.com/photo/2013/07/12/16/28/wine-150955_1280.png" alt="bilde av en rødvinsfalske med ChateauDeFrance som navn">
+                </picture>
+
+                <section class="Navn-pris">
+                <a href="produkter.html"><h3>Chateaudefrance</h3></a>
+                <p>250 kr</p>
+                </section>
+
+
+                <section class="stjerner">
+                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"><i class="fa-regular fa-star"></i></i></p>
+                <p>48 Reviews</p>
+                </section>
+            </article>
+
+
+            <article class="produkt-kort-slider">
+                <picture>
+                    <img src="https://cdn.pixabay.com/photo/2013/07/12/16/28/wine-150955_1280.png" alt="bilde av en rødvinsfalske med ChateauDeFrance som navn">
+                </picture>
+
+                <section class="Navn-pris">
+                <a href="produkter.html"><h3>Chateaudefrance</h3></a>
+                <p>250 kr</p>
+                </section>
+
+
+                <section class="stjerner">
+                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"><i class="fa-regular fa-star"></i></i></p>
+                <p>48 Reviews</p>
+                </section>
+            </article>
+
+
+            <article class="produkt-kort-slider">
+                <picture>
+                    <img src="https://cdn.pixabay.com/photo/2013/07/12/16/28/wine-150955_1280.png" alt="bilde av en rødvinsfalske med ChateauDeFrance som navn">
+                </picture>
+
+                <section class="Navn-pris">
+                <a href="produkter.html"><h3>Chateaudefrance</h3></a>
+                <p>250 kr</p>
+                </section>
+
+
+                <section class="stjerner">
+                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"><i class="fa-regular fa-star"></i></i></p>
+                <p>48 Reviews</p>
+                </section>
+            </article>
+
+
+            <article class="produkt-kort-slider">
+                <picture>
+                    <img src="https://cdn.pixabay.com/photo/2013/07/12/16/28/wine-150955_1280.png" alt="bilde av en rødvinsfalske med ChateauDeFrance som navn">
+                </picture>
+
+                <section class="Navn-pris">
+                <a href="produkter.html"><h3>Chateaudefrance</h3></a>
+                <p>250 kr</p>
+                </section>
+
+
+                <section class="stjerner">
+                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"><i class="fa-regular fa-star"></i></i></p>
+                <p>48 Reviews</p>
+                </section>
+            </article>
+
+
+            <article class="produkt-kort-slider">
+                <picture>
+                    <img src="https://cdn.pixabay.com/photo/2013/07/12/16/28/wine-150955_1280.png" alt="bilde av en rødvinsfalske med ChateauDeFrance som navn">
+                </picture>
+
+                <section class="Navn-pris">
+                <a href="produkter.html"><h3>Chateaudefrance</h3></a>
+                <p>250 kr</p>
+                </section>
+
+
+                <section class="stjerner">
+                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"><i class="fa-regular fa-star"></i></i></p>
+                <p>48 Reviews</p>
+                </section>
+            </article>
+
+
+            <article class="produkt-kort-slider">
+                <picture>
+                    <img src="https://cdn.pixabay.com/photo/2013/07/12/16/28/wine-150955_1280.png" alt="bilde av en rødvinsfalske med ChateauDeFrance som navn">
+                </picture>
+
+                <section class="Navn-pris">
+                <a href="produkter.html"><h3>Chateaudefrance</h3></a>
+                <p>250 kr</p>
+                </section>
+
+
+                <section class="stjerner">
+                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"><i class="fa-regular fa-star"></i></i></p>
+                <p>48 Reviews</p>
+                </section>
+            </article>
+        </section>
+      </div>
+    </main>
+
+        <footer id="Global-footer">
+            <article class="footer-header">
+           <h2><a href="index.html"><img src="https://img.freepik.com/premium-vector/beautiful-unique-logo-design-food-restaurant-company_1314480-881.jpg?semt=ais_hybrid" alt="Logo"></a></h2>
+            <p>Den beste og langtidslagrede vinen finner du her hos oss! skjekk gjerne også oss ut på sosiale medier linket nedenfor</p>
+            </article>
         
-                 </div>
-             </nav> 
-         </header>
+                <section class="footer-info">
+                    <section class="Kontakt">
+                    <h3>Kontakt</h3>
+                <p><i class="fa-solid fa-location-dot"></i><span>Adresse:</span> Strandbergveien 32, 4790 Lillesand</p>
+                <p><i class="fa-solid fa-phone"></i><span>Telefon:</span> 950 37 477</p>
+                <p><i class="fa-solid fa-envelope"></i><span>Email:</span> Solskinn.vingård@gmail.com</p>
+                <p><i class="fa-solid fa-clock"></i><span>Åpningstider:</span> man-fre 10-23!</p>
+                    </section>
+        
+                    <section class="Snarveier">
+                    <h3>Snarveier</h3>
+                    <a href="#">Produkter</a>
+                    <a href="#">Kategorier</a>
+                    <a href="#">Kontakt oss</a>
+                    </section>
+        
+                    <section class="Medier">
+                <h3>Sosiale medier</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://no.pinterest.com"><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href="https://www.facebook.com/?_rdr"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://no.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                     </section>
+                </section>
+        </footer>
+</body>

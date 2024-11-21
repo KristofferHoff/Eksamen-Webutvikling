@@ -313,15 +313,54 @@ footer h2 img{
 
 
 
-}
+
 
 
 
 /* ALT INNENFOR KASSE SIDEN!!*/
 
+.Leveringsadresse {
+    flex-direction: column; 
+    gap: 1rem; 
+}
 
+.Leveringsadresse article {
+    flex: 1 1 100%; 
+}
 
+.Leveringsadresse form {
+    width: 100%; 
+}
 
+.Leveringsadresse input {
+    width: 100%; 
+}
+
+.Navn-felt,
+.Post-felt {
+    flex-direction: column; 
+    gap: 1rem; 
+}
+
+.Betaling{
+    flex-direction: column;
+    gap: 1rem;
+}
+.Betaling form{
+    width: 100%;
+}
+.Betaling article{
+    flex: 1 1 100%; 
+}
+.Betaling input{
+width: 100%;
+}
+.Dato-CVC{
+    flex-direction: column;
+    gap: 1rem;
+}
+
+}
 
 
 
@@ -783,9 +822,14 @@ footer h2 img{
 
 }
 
-/* ALT FOR KASSE SIDE!!!*/
+/* ALT FOR PRODUKT-SIDE!!!*/
 
-
+.Produkt-area .Produkt-info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+   
+}
 
 
  
@@ -1114,10 +1158,10 @@ i{
 
 /* ALT FOR PRODUKTER */
 #Produkt-area{
-    display: flex; /* Bruker flexbox for layout */
-    justify-content: space-between; /* Fordeler elementene jevnt med plass mellom dem */
-    flex-wrap: wrap; /* Tillater at elementene brytes til neste rad hvis det er nødvendig */
-    gap: 0.2rem; /* Legger til et gap på 1rem mellom elementene */
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 0.2rem; 
 }
 .produkt-kort img{
     max-width: 150px;
@@ -1341,6 +1385,12 @@ i{
     box-sizing: border-box;
     padding: 10px;
     gap: 10px;
+}
+#Betalings-ikon{
+   display: flex;
+   flex-direction: column;
+   place-items: end;
+   gap: 15px;
 }
 
 
@@ -1601,6 +1651,115 @@ p{
     flex: 1 1 50%;
     flex-direction: column;
     gap: 1rem;
+}
+/* ALT INNENFOR PRODUKT SIDE!!!!*/
+
+ .Lignende-produkter{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    gap: 25px;
+    border-radius: 10px;
+    box-sizing: border-box;
+ }
+ .produkt-kort-slider img{
+    max-width: 150px;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+.produkt-kort-slider{
+    max-width: 500px; 
+    min-width: 300px; 
+    width: 100%; 
+    box-shadow: 13px 9px 20px 0px #efefef; 
+    border-radius: 10px; 
+    padding: 1,5rem;
+    margin-top: 1rem;
+}
+
+.produkt-kort-slider p{
+    justify-content: flex-start;
+}
+.Lignende-produkt-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+/* ALT INNENFOR PRODUKTBILDE!!!!*/
+#Flexbox{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.Produkt-area{
+    display: flex;
+}
+#Main-produkt{
+    display: flex;
+    max-width: 800px;
+    max-height: 900px;
+    padding-right: 20px;
+}
+.Lite-bilde{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 20px;
+}
+.Lite-bilde img{
+    max-width: 250px;
+    max-height: 238px;
+}
+
+.Stort-bilde{
+    display: flex;
+    max-width: 500px;
+    gap: 20px;
+}
+.Stort-bilde img{
+    max-width: 500px;
+    background-color: #555;
+}
+.Favoritt-knapp{
+    padding: 15px;
+    margin-top: 1.5rem;
+    margin-left: 15px;
+}
+.Favoritt-knapp i{
+    font-size: large;
+}
+.Produkt-info{
+    width: 100%;
+}
+#Knapper{
+    display: flex;
+    width: 100%;
+}
+#Størelse-velger{
+    padding: 20px;
+    background-color: #d0d0d0;
+    width: 100%;
+}
+.Størelse-form{
+    width: 100%;
+}
+
+.Handlekurv-knapp{
+    background-color: #2e2e2e;
+    color: white;
+   width: 100%;
+    margin-top: 1.5rem;
+    font-size: large;
+    padding: 15px;
 }
 
 
