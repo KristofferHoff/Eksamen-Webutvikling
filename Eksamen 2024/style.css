@@ -75,7 +75,7 @@ html{
 
 
  /*ALT FOR BANNER*/
- #banner{
+ #banner {
     min-height: 250px;
     max-width: 100%;
     justify-items: center;
@@ -402,7 +402,7 @@ width: 100%;
 
 
 /* ALT INNENFOR BANNER*/
-#banner{
+#banner, #banner-2, #banner-3{
     margin: 0 auto;
     max-height: 1000px;
     background-size: cover;
@@ -433,10 +433,11 @@ width: 100%;
        box-sizing: border-box;
        background-color: black;
        border-radius: 27px;
+       height: 350px;
 
     }
 
-    .wrapper #banner {
+    .wrapper #banner, #banner-2, #banner-3 {
         min-width: 100%; 
         height: 100%; 
         background-color: #000000;
@@ -450,17 +451,7 @@ width: 100%;
         box-sizing: border-box;
     }
     
-    .wrapper #banner article {
-        max-width: 80%; 
-    }
-    
-    .wrapper #banner h2 {
-        margin: 5rem; 
-    }
-    
-    .wrapper #banner p {
-        margin: 5rem; 
-    }
+  
     
   
    
@@ -870,7 +861,7 @@ width: 100%;
 
 
 /* ALT INNENFOR BANNER*/
-#banner{
+#banner, #banner-2, #banner-3{
     margin: 0 auto;
     max-height: 1000px;
     background-size: cover;
@@ -901,9 +892,10 @@ width: 100%;
        box-sizing: border-box;
        background-color: black;
        border-radius: 27px;
+       height: 416px;
     }
 
-    .wrapper #banner {
+    .wrapper #banner, #banner-2, #banner-3 {
         min-width: 100%; 
         height: 100%; 
         background-color: #000000;
@@ -917,18 +909,18 @@ width: 100%;
         box-sizing: border-box;
     }
     
-    .wrapper #banner article {
+    .wrapper #banner, #banner-2, #banner-3 article {
         text-align: end;
         max-width: 600px;
-        min-height: 300px;
+        min-height: 382px;
         justify-content: flex-end;
     }
     
-    .wrapper #banner h2 {
+    .wrapper #banner,#banner-2, #banner-3 h2 {
         margin: 20px; 
     }
     
-    .wrapper #banner p {
+    .wrapper #banner,#banner-2, #banner-3 p {
         margin: 5px; 
     }
     
@@ -1403,7 +1395,7 @@ i{
    place-items: end;
    gap: 15px;
 }
-#Produkt-ikon{
+#Produkt-ikon, #Produkt-ikon-2, #Produkt-ikon-3{
     display: flex;
     gap: 5px;
     flex-direction: column;
