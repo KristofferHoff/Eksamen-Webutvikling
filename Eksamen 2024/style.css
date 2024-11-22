@@ -449,6 +449,8 @@ width: 100%;
         text-align: flex-end;
         padding: 1rem; 
         box-sizing: border-box;
+        text-align: end;
+        justify-content: center;
     }
     
   
@@ -716,7 +718,7 @@ width: 100%;
     align-items: center; 
     justify-content: center;
     text-align: center; 
-    padding: 2rem;
+    padding: 1rem;
 }
 .produkt-kort .Navn-pris a{
     text-decoration: none;
@@ -811,6 +813,10 @@ width: 100%;
     gap: 5px;
     justify-content: center;
     justify-content: space-evenly;
+ }
+ .Email{
+    display: flex;
+    flex-wrap: nowrap;
  }
 
 
@@ -914,15 +920,9 @@ width: 100%;
         max-width: 600px;
         min-height: 382px;
         justify-content: flex-end;
+        justify-content: center;
     }
-    
-    .wrapper #banner,#banner-2, #banner-3 h2 {
-        margin: 20px; 
-    }
-    
-    .wrapper #banner,#banner-2, #banner-3 p {
-        margin: 5px; 
-    }
+    #banner
     
   
    
@@ -1299,6 +1299,10 @@ gap: 1rem;
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
+ }
+ .Email{
+    display: flex;
+    flex-wrap: nowrap;
  }
 
 
