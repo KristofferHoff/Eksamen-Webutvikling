@@ -877,14 +877,38 @@ i{
     margin-top: 1rem;
 }
 
-.produkt-kort-slider p{
-    justify-content: flex-start;
-}
+
 .Lignende-produkt-area{
     display: flex;
     justify-content: space-between;
+    a{
+        text-decoration: none;
+        color: purple;
+    }
     
 }
+.Navn-pris{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.stjerner{
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+}
+.Navn-pris a{
+    text-decoration: none;
+    color: black;
+}
+.Hjerte-ikon{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
 
 
 /*ALT INNENFOR UTVIDELSES FELT*/
@@ -1267,10 +1291,7 @@ summary::marker{
     text-align: center; 
     padding: 1rem;
 }
-.produkt-kort .Navn-pris a{
-    text-decoration: none;
-    color: black;
-}
+
 
 
 
@@ -1787,13 +1808,15 @@ summary::marker{
     margin-top: 1rem;
 }
 
-.produkt-kort-slider p{
-    justify-content: flex-start;
-}
+
 .Lignende-produkt-area{
     display: flex;
     justify-content: space-between;
     min-width: 520px;
+    a{
+        text-decoration: none;
+        color: purple;
+    }
 }
 
 
@@ -1900,6 +1923,28 @@ summary::marker{
     border: 1px solid rgba(151, 144, 144, 0.784);
     border-radius: 20px;
 }
+.Navn-pris{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.stjerner{
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+}
+.Navn-pris a{
+    text-decoration: none;
+    color: black;
+}
+.Hjerte-ikon{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
 
 /* SMULESTI*/
 
