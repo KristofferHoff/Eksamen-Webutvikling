@@ -113,11 +113,11 @@ html{
 .produkt-kort {
     margin-left: 1rem;
     margin-right: 1rem;
-    max-width: 350px; /* Maksimal bredde for produktkortet er 350px */
-    min-width: 150px; /* Minimum bredde for produktkortet er 200px */
-    width: 100%; /* Produktkortet tar opp 100% av sin container */
-    box-shadow: 13px 9px 20px 0px #efefef; /* Legger til en boks-skygge for dybdeeffekt */
-    border-radius: 4px; /* Avrunder hjørnene på produktkortet med 4px */
+    max-width: 350px; 
+    min-width: 150px; 
+    width: 100%; 
+    box-shadow: 13px 9px 20px 0px #efefef; 
+    border-radius: 4px; 
     padding: 1rem;
 }
 .produkt-kort img{
@@ -642,6 +642,8 @@ p{
     max-width: 1200px;
     width: 100%;
     align-items: center;
+    /*LITT JUSTERING FOR Å FÅ DEN TIL Å SE BEST MULIG UT PÅ MOBIL SMALL*/
+    min-width: 386px;
 }
 #breadcrumb{
 a{
@@ -694,6 +696,7 @@ i{
    flex-direction: column;
    place-items: end;
    gap: 15px;
+   
 }
 #Produkt-ikon, #Produkt-ikon-2, #Produkt-ikon-3{
     display: flex;
@@ -702,11 +705,15 @@ i{
     place-items: flex-end;
     margin-right: 30px;
     font-size: 20px;
+    width: fit-content;
 }
 #Størelse, #Størelse-2, #Størelse-3, #Antall, #Antall-2, #Antall-3{
     padding: 5px;
     border-radius: 5px;
 }
+
+
+
 /* ALT INNENFOR PRODUKT SIDE*/
 .Lite-bilde img, .Stort-bilde img {
     max-width: 425px; 
@@ -722,6 +729,186 @@ i{
     max-width: 425px;
 }
 
+.Hjerte-ikon{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+#Flexbox{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.Produkt-area{
+    display: flex;
+}
+#Main-produkt{
+    max-height: 1000px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+
+.Lite-bilde{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 10px;
+}
+.Lite-bilde img{
+    display: flex;
+    max-width: 150px;
+    max-height: 138px;
+}
+
+.Stort-bilde{
+    display: flex;
+    max-width: 500px;
+    gap: 20px;
+}
+.Stort-bilde img{
+    display: flex;
+    background-color: #555;
+    width: 100%;
+    min-width: 386px;
+}
+
+
+.Favoritt-knapp{
+    padding: 15px;
+    margin-top: 1.5rem;
+    margin-left: 15px;
+}
+.Favoritt-knapp i{
+    font-size: large;
+}
+.Produkt-info{
+    width: 100%;
+    min-width: 365px;
+}
+#Knapper{
+    display: flex;
+    width: 100%;
+}
+
+
+#Størelse-velger{
+    padding: 20px;
+    background-color: #d0d0d0;
+    width: 100%;
+}
+.Størelse-form{
+    width: 100%;
+}
+
+.Handlekurv-knapp{
+    background-color: #2e2e2e;
+    color: white;
+   width: 100%;
+    margin-top: 1.5rem;
+    font-size: large;
+    padding: 15px;
+}
+.Hjerte-ikon{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.Andmeldelse-knapp summary{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.Andmeldelse-knapp summary, .Størelse-tabell summary, .Produkt-detaljer summary, .Matrial summary{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.Andmeldelse-kort-2{
+    border: 1px solid rgba(151, 144, 144, 0.784);
+    border-radius: 20px;
+}
+
+/* SMULESTI*/
+
+#Smule-sti{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    p{
+        font-weight: bold;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+/* slider på produkt side*/
+.Lignende-produkter{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    gap: 25px;
+    border-radius: 10px;
+    box-sizing: border-box;
+ }
+ .produkt-kort-slider img{
+    max-width: 150px;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+.produkt-kort-slider{
+    max-width: 500px; 
+    min-width: 300px; 
+    width: 100%; 
+    box-shadow: 13px 9px 20px 0px #efefef; 
+    border-radius: 10px; 
+    padding: 1,5rem;
+    margin-top: 1rem;
+}
+
+.produkt-kort-slider p{
+    justify-content: flex-start;
+}
+.Lignende-produkt-area{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+/*ALT INNENFOR UTVIDELSES FELT*/
+#Utvidelses-felt{
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    gap: 20px;
+}
+
+
+.Matrial, .Produkt-detaljer, .Størelse-tabell, .Andmeldelse-knapp {
+    cursor: pointer;
+    border-top: 2px solid black;
+    min-height: 100px;
+    place-content: center;
+
+}
+summary::marker{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* LITT JUSK FOR Å FÅ ALT TL*/
 
 
 }
@@ -740,10 +927,9 @@ i{
     body, #Global-header, #Global-footer{
         width: 100%; 
         max-width: 100%; 
-        padding: 0 20px;  /* Ekstra plass til sides */
-        box-sizing: border-box; /* Sørg for at padding ikke øker bredden */
+        box-sizing: border-box; 
     }
-/* Stiler for header, main, og footer for at de skal arve midtstillingen */
+
 #Global-header, #Global-footer, .product-card, .Andmeldelser  {
     max-width: 1200px;
     margin: 0 auto;
@@ -966,6 +1152,8 @@ i{
      list-style: none;
  }
 
+
+ /* BRUK AV CHAT GPT HER*/
  .search-form{
     display: flex;
     width: 100%;
@@ -1050,10 +1238,10 @@ i{
 
 /* ALT FOR PRODUKTER */
 #Produkt-area{
-    display: flex; /* Bruker flexbox for layout */
-    justify-content: space-between; /* Fordeler elementene jevnt med plass mellom dem */
-    flex-wrap: wrap; /* Tillater at elementene brytes til neste rad hvis det er nødvendig */
-    gap: 0.2rem; /* Legger til et gap på 1rem mellom elementene */
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 0.2rem; 
 }
 .produkt-kort img{
     max-width: 150px;
@@ -1064,17 +1252,14 @@ i{
     border-radius: 5px;
 }
 .produkt-kort{
-    max-width: 350px; /* Maksimal bredde for produktkortet er 350px */
-    min-width: 150px; /* Minimum bredde for produktkortet er 200px */
-    width: 100%; /* Produktkortet tar opp 100% av sin container */
-    box-shadow: 13px 9px 20px 0px #efefef; /* Legger til en boks-skygge for dybdeeffekt */
-    border-radius: 4px; /* Avrunder hjørnene på produktkortet med 4px */
+    max-width: 350px; 
+    min-width: 150px; 
+    width: 100%; 
+    box-shadow: 13px 9px 20px 0px #efefef; 
+    border-radius: 4px; 
     padding: 1rem;
 }
 
-.produkt-kort p{
-    justify-content: flex-start;
-}
 #Produkter{
     flex-direction: column;
     align-items: center; 
@@ -1097,6 +1282,8 @@ i{
 
 
 /* ALT FOR ELEMENTER PÅ NETTSIDEN*/
+
+/* BRUK AV CHAT GPT HER*/
 .button {
     display: inline-block;
     padding: 0.5rem 1.5rem; /* Gir ekstra bredde for oval form */
@@ -1200,6 +1387,7 @@ i{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    min-width: 520px;
    
 }
 
@@ -1580,6 +1768,7 @@ summary::marker{
     gap: 25px;
     border-radius: 10px;
     box-sizing: border-box;
+    min-width: 520px;
  }
  .produkt-kort-slider img{
     max-width: 150px;
@@ -1604,6 +1793,7 @@ summary::marker{
 .Lignende-produkt-area{
     display: flex;
     justify-content: space-between;
+    min-width: 520px;
 }
 
 
@@ -1622,19 +1812,18 @@ summary::marker{
     display: flex;
 }
 #Main-produkt{
-    display: flex;
-    max-width: 800px;
-    max-height: 900px;
+    max-height: 1000px;
     padding-right: 20px;
+    margin: 0 auto;
 }
 
 
 .Lite-bilde{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     gap: 20px;
-    padding-right: 20px;
+    padding-top: 10px;
 }
 .Lite-bilde img{
     display: flex;
@@ -1688,6 +1877,44 @@ summary::marker{
     font-size: large;
     padding: 15px;
 }
+.Hjerte-ikon{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.Andmeldelse-knapp summary{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.Andmeldelse-knapp summary, .Størelse-tabell summary, .Produkt-detaljer summary, .Matrial summary{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.Andmeldelse-kort-2{
+    border: 1px solid rgba(151, 144, 144, 0.784);
+    border-radius: 20px;
+}
+
+/* SMULESTI*/
+
+#Smule-sti{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    p{
+        font-weight: bold;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
 
 
 }
@@ -1704,11 +1931,11 @@ summary::marker{
 
 
     body, #Global-header, #Global-footer{
-        width: 100%; /* Full bredde for disse elementene */
-        max-width: 1200px; /* Begrens dem til 1200px */
-        margin: 0 auto; /* Midtstill */
-        padding: 0 20px;  /* Ekstra plass til sides */
-        box-sizing: border-box; /* Sørg for at padding ikke øker bredden */
+        width: 100%; 
+        max-width: 1200px; 
+        margin: 0 auto; 
+        padding: 0 20px;  
+        box-sizing: border-box; 
     }
 /* Stiler for header, main, og footer for at de skal arve midtstillingen */
 #Global-header, #Global-footer, .product-card, .Andmeldelser  {
@@ -1797,7 +2024,7 @@ summary::marker{
     grid-template-rows: auto repeat(3, 1fr);
     max-width: 1200px;
     gap: 1rem;
-    height: 300px;
+    height: 600px;
     margin: 0 auto;
     }
     #kategori-grid h2 {
@@ -1894,11 +2121,11 @@ header ul li img{
     }
 
     .Meny-liste {
-        flex: 2; /* Centers nav list */
+        flex: 2; 
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px; /* Adds space between nav items */
+        gap: 20px; 
         list-style: none;
     
     }
@@ -1933,6 +2160,8 @@ header ul li img{
         text-decoration: none;
         list-style: none;
     }
+
+    /*BRUK AV CHAT GPT HER*/
     .search-form{
         display: flex;
         align-items: center; /* Align input and button vertically */
@@ -2043,10 +2272,6 @@ i{
     padding: 1,5rem;
     margin-top: 1rem;
 }
-
-.produkt-kort p{
-    justify-content: flex-start;
-}
 #Produkter{
     flex-direction: column;
     align-items: center; 
@@ -2068,6 +2293,13 @@ gap: 1rem;
     text-decoration: none;
     color: black;
 }
+.Hjerte-ikon{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
 
 
 
@@ -2080,6 +2312,8 @@ gap: 1rem;
 
 
 /* ALT FOR ELEMENTER PÅ NETTSIDEN*/
+
+/*BRUK AV CHAT GPT HER*/
 .button {
     display: inline-block;
     padding: 0.5rem 1.5rem; /* Gir ekstra bredde for oval form */
@@ -2581,12 +2815,13 @@ p{
     margin-top: 1rem;
 }
 
-.produkt-kort-slider p{
-    justify-content: flex-start;
-}
 .Lignende-produkt-area{
     display: flex;
     justify-content: space-between;
+    a{
+        text-decoration: none;
+        color: purple;
+    }
 }
 
 
@@ -2618,6 +2853,7 @@ p{
     justify-content: space-between;
     gap: 20px;
     padding-right: 20px;
+    padding-left: 20px;
 }
 .Lite-bilde img{
     display: flex;
@@ -2647,6 +2883,9 @@ p{
 }
 .Produkt-info{
     width: 100%;
+    a{
+        color: #555;
+    }
 }
 #Knapper{
     display: flex;
@@ -2693,11 +2932,35 @@ p{
     place-content: center;
 
 }
+.Andmeldelse-knapp summary, .Størelse-tabell summary, .Produkt-detaljer summary, .Matrial summary{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
 summary::marker{
     display: flex;
     justify-content: space-between;
 }
+.Andmeldelse-kort-2{
+    border: 1px solid rgba(151, 144, 144, 0.784);
+    border-radius: 20px;
+}
 
+/* SMULESTI*/
+
+#Smule-sti{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    p{
+        font-weight: bold;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
 
 
 }
