@@ -2,6 +2,8 @@
 *{
     box-sizing: border-box;
 }
+
+
 /*ALT FOR MOBIL*/
 
 @media only screen and (max-width: 426px){
@@ -39,36 +41,46 @@ html{
      align-content: space-evenly;
      list-style: none;
  }
- .search-form{
+
+/* BRUK AV CHAT GPT */
+ .search-form {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    align-items: center; /* Align input and button vertically */
-    border: 1px solid black; /* Thin black border around the search form */
-    border-radius: 5px; /* Rounded corners */
-    overflow: hidden; /* Ensures child elements don’t overflow the parent */
-    max-width: 200px; /* Optional: sets a maximum width for the search form */
-}
-
-.search-form input{
-    flex: 2; /* Input takes up remaining space */
-    padding: 8px; /* Adjust padding for better spacing */
-    font-size: 14px; /* Slightly larger font for better visibility */
-    border: none; /* Remove individual border */
-    outline: none; /* Remove default focus outline */
-    border-radius: 0; /* Ensure no radius on the input to fit perfectly with the parent */
-}
-
-.search-form button{
-    background-color: transparent; /* Transparent background for icon button */
-    border: none; /* Remove button border */
-    cursor: pointer; /* Pointer cursor for button */
-    padding: 8px; /* Padding for consistent size */
-    font-size: 16px; /* Optional: Adjust icon size */
-    display: flex; /* Center content inside the button */
-    align-items: center; /* Vertical alignment */
-    justify-content: center; 
-    color: black; 
-}
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .search-form input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    padding-right: 40px; 
+  }
+  
+  .search-form button {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .search-form button i {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .search-form input:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
 
 
 
@@ -293,25 +305,26 @@ footer h2 img{
 
 
 /*ALT FOR TEKST + ANNET*/
-.button {
-    display: inline-block;
-    padding: 0.5rem 1.3rem; /* Gir ekstra bredde for oval form */
-    background-color: white; /* Hvit bakgrunn */
-    color: black; /* Sort tekst */
-    font-size: 14px;
-    font-weight: bold;
-    border: 2px solid black; /* Sort kant */
-    border-radius: 30px; /* Runde kanter for å skape oval form */
-    text-align: center;
-    text-decoration: none; /* Fjerner understrek */
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* For glatte hover-effekter */
-}
 
-.button:hover {
+/*BRUK AV CHAT GPT*/
+.button {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  .button:hover {
     background-color: black;
-    color: white; /* Omvendt farge for kontrast ved hover */
-}
+    color: white;
+    border: 2px solid #ff5733; 
+  }
 
 
 
@@ -642,7 +655,8 @@ p{
     max-width: 1200px;
     width: 100%;
     align-items: center;
-    /*LITT JUSTERING FOR Å FÅ DEN TIL Å SE BEST MULIG UT PÅ MOBIL SMALL*/
+
+    /*LITT JUSTERING/JUKS FOR Å FÅ DEN TIL Å SE BEST MULIG UT PÅ MOBIL SMALL*/
     min-width: 386px;
 }
 #breadcrumb{
@@ -927,10 +941,7 @@ gap: 1rem;
     place-content: center;
 
 }
-summary::marker{
-    display: flex;
-    justify-content: space-between;
-}
+
 
 /* LITT JUSK FOR Å FÅ ALT TL*/
 
@@ -1177,37 +1188,45 @@ summary::marker{
  }
 
 
- /* BRUK AV CHAT GPT HER*/
- .search-form{
+   /* BRUK AV CHAT GPT */
+ .search-form {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    align-items: center; /* Align input and button vertically */
-    border: 1px solid black; /* Thin black border around the search form */
-    border-radius: 5px; /* Rounded corners */
-    overflow: hidden; /* Ensures child elements don’t overflow the parent */
-    max-width: 200px; /* Optional: sets a maximum width for the search form */
-}
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .search-form input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    padding-right: 40px; 
+  }
+  
+  .search-form button {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .search-form button i {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .search-form input:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
 
-.search-form input{
-    flex: 2; /* Input takes up remaining space */
-    padding: 8px; /* Adjust padding for better spacing */
-    font-size: 14px; /* Slightly larger font for better visibility */
-    border: none; /* Remove individual border */
-    outline: none; /* Remove default focus outline */
-    border-radius: 0; /* Ensure no radius on the input to fit perfectly with the parent */
-}
-
-.search-form button{
-    background-color: transparent; /* Transparent background for icon button */
-    border: none; /* Remove button border */
-    cursor: pointer; /* Pointer cursor for button */
-    padding: 8px; /* Padding for consistent size */
-    font-size: 16px; /* Optional: Adjust icon size */
-    display: flex; /* Center content inside the button */
-    align-items: center; /* Vertical alignment */
-    justify-content: center; 
-    color: black; 
-}
 
 
 
@@ -1306,24 +1325,25 @@ summary::marker{
 
 /* BRUK AV CHAT GPT HER*/
 .button {
-    display: inline-block;
-    padding: 0.5rem 1.5rem; /* Gir ekstra bredde for oval form */
-    background-color: white; /* Hvit bakgrunn */
-    color: black; /* Sort tekst */
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 10px 20px;
     font-size: 16px;
-    font-weight: bold;
-    border: 2px solid black; /* Sort kant */
-    border-radius: 30px; /* Runde kanter for å skape oval form */
     text-align: center;
-    text-decoration: none; /* Fjerner understrek */
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* For glatte hover-effekter */
-}
-
-.button:hover {
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  .button:hover {
     background-color: black;
-    color: white; /* Omvendt farge for kontrast ved hover */
-}
+    color: white;
+    border: 2px solid #ff5733; 
+  }
+  
+
 
 
 
@@ -1982,7 +2002,7 @@ gap: 1rem;
         padding: 0 20px;  
         box-sizing: border-box; 
     }
-/* Stiler for header, main, og footer for at de skal arve midtstillingen */
+    
 #Global-header, #Global-footer, .product-card, .Andmeldelser  {
     max-width: 1200px;
     margin: 0 auto;
@@ -2206,41 +2226,44 @@ header ul li img{
         list-style: none;
     }
 
-    /*BRUK AV CHAT GPT HER*/
-    .search-form{
-        display: flex;
-        align-items: center; /* Align input and button vertically */
-        border: 1px solid black; /* Thin black border around the search form */
-        border-radius: 5px; /* Rounded corners */
-        overflow: hidden; /* Ensures child elements don’t overflow the parent */
-        min-width: 195px;
-        max-width: 300px; /* Optional: sets a maximum width for the search form */
-    }
-    
-    .search-form input{
-        flex: 1; /* Input takes up remaining space */
-        padding: 8px; /* Adjust padding for better spacing */
-        font-size: 14px; /* Slightly larger font for better visibility */
-        border: none; /* Remove individual border */
-        outline: none; /* Remove default focus outline */
-        border-radius: 0; /* Ensure no radius on the input to fit perfectly with the parent */
-    }
-    
-    .search-form button{
-        background-color: transparent; /* Transparent background for icon button */
-        border: none; /* Remove button border */
-        cursor: pointer; /* Pointer cursor for button */
-        padding: 8px; /* Padding for consistent size */
-        font-size: 16px; /* Optional: Adjust icon size */
-        display: flex; /* Center content inside the button */
-        align-items: center; /* Vertical alignment */
-        justify-content: center; 
-        color: black; 
-    }
-i{
-    justify-content: space-evenly ;
-
-}
+  /* BRUK AV CHAT GPT */
+ .search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 230px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .search-form input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    padding-right: 40px; /* Plass til ikonet */
+  }
+  
+  .search-form button {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .search-form button i {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .search-form input:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
 
 
 
@@ -2358,26 +2381,26 @@ gap: 1rem;
 
 /* ALT FOR ELEMENTER PÅ NETTSIDEN*/
 
-/*BRUK AV CHAT GPT HER*/
+/*BRUK AV CHAT GPT*/
 .button {
-    display: inline-block;
-    padding: 0.5rem 1.5rem; /* Gir ekstra bredde for oval form */
-    background-color: white; /* Hvit bakgrunn */
-    color: black; /* Sort tekst */
-    font-size: 14px;
-    font-weight: bold;
-    border: 2px solid black; /* Sort kant */
-    border-radius: 30px; /* Runde kanter for å skape oval form */
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
     text-align: center;
-    text-decoration: none; /* Fjerner understrek */
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* For glatte hover-effekter */
-}
-
-.button:hover {
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  .button:hover {
     background-color: black;
-    color: white; /* Omvendt farge for kontrast ved hover */
-}
+    color: white;
+    border: 2px solid #ff5733; 
+  }
+
 
 
 
