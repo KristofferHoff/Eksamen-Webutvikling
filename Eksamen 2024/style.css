@@ -100,7 +100,7 @@ html{
     color: black;
     padding: 20px;
     min-height: 300px; 
-    background-image: url('https://cdn.pixabay.com/photo/2020/06/29/19/34/czechia-5354033_1280.jpg');
+    background-image: url('Bilder/Banner-Vingård.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -147,6 +147,10 @@ html{
 .produkt-kort .Navn-pris a{
     text-decoration: none;
     color: black;
+}
+.produkt-kort picture{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -932,6 +936,7 @@ i{
     gap: 25px;
     border-radius: 10px;
     box-sizing: border-box;
+    min-width: 120%;
  }
  .produkt-kort-slider img{
     max-width: 150px;
@@ -949,6 +954,7 @@ i{
     padding: 1,5rem;
     margin-top: 1rem;
 }
+
 
 
 .Lignende-produkt-area{
@@ -1045,7 +1051,7 @@ gap: 1rem;
     background-color: #000000;
     border-radius: 25px;
     background-position: center;
-    background-image: url('https://cdn.pixabay.com/photo/2020/06/29/19/34/czechia-5354033_1280.jpg');
+    background-image: url('Bilder/Banner-Vingård.jpg');
     background-repeat: no-repeat;
     overflow-x :scroll ;
 }
@@ -1357,6 +1363,10 @@ gap: 1rem;
     box-shadow: 13px 9px 20px 0px #efefef; 
     border-radius: 4px; 
     padding: 1rem;
+}
+.produkt-kort picture{
+    display: flex;
+    justify-content: center;
 }
 
 #Produkter{
@@ -2103,7 +2113,7 @@ gap: 1rem;
     background-color: #000000;
     border-radius: 25px;
     background-position: center;
-    background-image: url('https://cdn.pixabay.com/photo/2020/06/29/19/34/czechia-5354033_1280.jpg');
+    background-image: url('Bilder/Banner-Vingård.jpg');
     background-repeat: no-repeat;
     overflow-x :scroll ;
 }
@@ -2461,6 +2471,10 @@ header ul li img{
     border-radius: 10px; 
     padding: 1,5rem;
     margin-top: 1rem;
+}
+.produkt-kort picture{
+    display: flex;
+    justify-content: center;
 }
 #Produkter{
     flex-direction: column;
