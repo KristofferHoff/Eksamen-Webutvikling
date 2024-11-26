@@ -199,34 +199,34 @@ html{
     #Vingard{
         max-width: 386px;
         background-color: hsl(146, 52%, 72%); 
-        background-image: url('https://cdn.pixabay.com/photo/2023/12/24/16/43/autumn-8467482_1280.jpg');
+        background-image: url('Bilder/Kategori-vingård.webp');
         background-size: cover;
     }
     #Cruise{
         max-width: 386px;
         background-color: hsl(0, 68%, 50%); 
-        background-image: url('https://cdn.pixabay.com/photo/2023/10/27/09/38/sea-8344717_1280.jpg');
+        background-image: url('Bilder/Cruise.jpg');
         background-size: cover;
     }
     
     #sprudlende{
         max-width: 386px;
         background-color: hsl(337, 52%, 72%); 
-        background-image: url('https://cdn.pixabay.com/photo/2022/03/08/13/41/drinks-7055770_1280.jpg');
+        background-image: url('Bilder/Sprudlende.jpg');
         background-size: cover;
     }
     
     #Rod-vin{
         max-width: 864px;
         background-color: hsl(258, 39%, 26%);
-        background-image: url('https://cdn.pixabay.com/photo/2015/07/18/13/14/wine-850337_1280.jpg');
+        background-image: url('Bilder/Rødvin.jpg');
         background-size: cover;
     }
     
     #Hvit-vin{
         width: 100%;
         background-color: hsl(271, 52%, 72%);
-        background-image: url('https://cdn.pixabay.com/photo/2017/09/26/16/44/wine-2789265_1280.jpg');
+        background-image: url('Bilder/Hvitvin.jpg');
         background-size: cover;
 
     }
@@ -291,6 +291,33 @@ html{
     flex-direction: column;
     margin-top: 5px;
 }
+ .footer-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+ }
+.Kontakt{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.Snarveier{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+}
+.Medier{
+   text-align: center;
+   ul{
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+   }
+}
+
+
 footer h2 img{
     width: 125px;
  }
@@ -311,10 +338,13 @@ footer h2 img{
 
 
 
+
 /*ALT FOR TEKST + ANNET*/
 
+
+
 /*BRUK AV CHAT GPT*/
-.button {
+.button-banner{
     background-color: white;
     border: 2px solid black;
     color: black;
@@ -331,6 +361,19 @@ footer h2 img{
     background-color: black;
     color: white;
     border: 2px solid #ff5733; 
+  }
+  /*slutt BRUK AV CHAT GPT*/
+
+  .button{
+    border: 2px solid black;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    text-decoration: none;
   }
 
 
@@ -875,6 +918,10 @@ i{
         color: black;
     }
 }
+.Piontage{
+    font-weight: bolder;
+}
+
 
 /* slider på produkt side*/
 .Lignende-produkter{
@@ -1107,7 +1154,7 @@ gap: 1rem;
         grid-row: 1 / 2;
         
         
-        background-image: url('https://cdn.pixabay.com/photo/2023/12/24/16/43/autumn-8467482_1280.jpg');
+        background-image: url('Bilder/Kategori-vingård.webp');
         background-size: cover;
     }
     #Cruise{
@@ -1118,7 +1165,7 @@ gap: 1rem;
         grid-row: 1 / 2;
         
         
-        background-image: url('https://cdn.pixabay.com/photo/2023/10/27/09/38/sea-8344717_1280.jpg');
+        background-image: url('Bilder/Cruise.jpg');
         background-size: cover;
     }
     
@@ -1129,7 +1176,7 @@ gap: 1rem;
        grid-column: 3 / 4;
        grid-row: 1 / 2;
         
-        background-image: url('https://cdn.pixabay.com/photo/2022/03/08/13/41/drinks-7055770_1280.jpg');
+        background-image: url('Bilder/Sprudlende.jpg');
         background-size: cover;
     }
     
@@ -1140,7 +1187,7 @@ gap: 1rem;
         grid-column: 1 / span 3;
         grid-row: 2 / 3;
         
-        background-image: url('https://cdn.pixabay.com/photo/2015/07/18/13/14/wine-850337_1280.jpg');
+        background-image: url('Bilder/Rødvin.jpg');
         background-size: cover;
     }
     
@@ -1155,7 +1202,7 @@ gap: 1rem;
         
         
        
-        background-image: url('https://cdn.pixabay.com/photo/2017/09/26/16/44/wine-2789265_1280.jpg');
+        background-image: url('Bilder/Hvitvin.jpg');
         background-size: cover;
     }
     }
@@ -1332,8 +1379,8 @@ gap: 1rem;
 
 /* ALT FOR ELEMENTER PÅ NETTSIDEN*/
 
-/* BRUK AV CHAT GPT HER*/
-.button {
+/*BRUK AV CHAT GPT*/
+.button-banner{
     background-color: white;
     border: 2px solid black;
     color: black;
@@ -1351,7 +1398,20 @@ gap: 1rem;
     color: white;
     border: 2px solid #ff5733; 
   }
-  
+  /*slutt BRUK AV CHAT GPT*/
+
+  .button{
+    border: 2px solid black;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+
 
 
 
@@ -1416,6 +1476,11 @@ gap: 1rem;
  .Email{
     display: flex;
     flex-wrap: nowrap;
+ }
+ .Snarveier{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
  }
 
 
@@ -1988,6 +2053,9 @@ gap: 1rem;
         color: black;
     }
 }
+.Piontage{
+    font-weight: bolder;
+}
 
 
 }
@@ -2168,7 +2236,7 @@ gap: 1rem;
         background-color: hsl(146, 52%, 72%); 
         grid-column: 1 / 2; 
         grid-row: 2 / 2; 
-        background-image: url('https://cdn.pixabay.com/photo/2023/12/24/16/43/autumn-8467482_1280.jpg');
+        background-image: url('Bilder/Kategori-vingård.webp');
         background-size: cover;
     }
     #Cruise{
@@ -2176,7 +2244,7 @@ gap: 1rem;
         background-color: hsl(0, 68%, 50%); 
         grid-column: 2 / 3; 
         grid-row: 2 / 3; 
-        background-image: url('https://cdn.pixabay.com/photo/2023/10/27/09/38/sea-8344717_1280.jpg');
+        background-image: url('Bilder/Cruise.jpg');
         background-size: cover;
     }
     
@@ -2185,7 +2253,7 @@ gap: 1rem;
         background-color: hsl(337, 52%, 72%); 
         grid-column: 3 / 4;
         grid-row: 2 / 4;
-        background-image: url('https://cdn.pixabay.com/photo/2022/03/08/13/41/drinks-7055770_1280.jpg');
+        background-image: url('Bilder/Sprudlende.jpg');
         background-size: cover;
     }
     
@@ -2194,7 +2262,7 @@ gap: 1rem;
         background-color: hsl(258, 39%, 26%);
         grid-column: 1 / 3;
         grid-row: 3 / 5;
-        background-image: url('https://cdn.pixabay.com/photo/2015/07/18/13/14/wine-850337_1280.jpg');
+        background-image: url('Bilder/Rødvin.jpg');
         background-size: cover;
     }
     
@@ -2203,7 +2271,7 @@ gap: 1rem;
         background-color: hsl(271, 52%, 72%);
         grid-column: 3 / 4;
         grid-row: 4 / 4;
-        background-image: url('https://cdn.pixabay.com/photo/2017/09/26/16/44/wine-2789265_1280.jpg');
+        background-image: url('Bilder/Hvitvin.jpg');
         background-size: cover;
     }
     
@@ -2440,7 +2508,7 @@ gap: 1rem;
 /* ALT FOR ELEMENTER PÅ NETTSIDEN*/
 
 /*BRUK AV CHAT GPT*/
-.button {
+.button-banner{
     background-color: white;
     border: 2px solid black;
     color: black;
@@ -2458,7 +2526,19 @@ gap: 1rem;
     color: white;
     border: 2px solid #ff5733; 
   }
+  /*slutt BRUK AV CHAT GPT*/
 
+  .button{
+    border: 2px solid black;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    text-decoration: none;
+  }
 
 
 
@@ -2485,7 +2565,7 @@ gap: 1rem;
     padding: 20px;
     text-align: center;
     list-style: none;
-    background-image: linear-gradient(rgb(113, 113, 113), rgba(255, 255, 247, 0.053));
+   
 }
 .footer-header{
     display: flex;
@@ -2527,6 +2607,11 @@ gap: 1rem;
  .Email{
     display: flex;
     flex-wrap: nowrap;
+ }
+ .Snarveier{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
  }
 
 
@@ -3087,6 +3172,9 @@ summary::marker{
         text-decoration: none;
         color: black;
     }
+}
+.Piontage{
+    font-weight: bolder;
 }
 
 
