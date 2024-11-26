@@ -29,15 +29,15 @@
            
               
                    <ul class="Meny-liste">
-                       <li><a href="index.html">Hjem</a></li>
-                       <li><a href="#Produkter">Produkter</a></li>
-                       <li><a href="index.html"><img src="https://img.freepik.com/premium-vector/beautiful-unique-logo-design-food-restaurant-company_1314480-881.jpg?semt=ais_hybrid" alt="Logo"></a></li>
-                       <li><a href="#Kategorier">Kategorier</a></li>
+                       <li><a href="Index.html">Hjem</a></li>
+                       <li><a href="Index.html#Produkter">Produkter</a></li>
+                       <li><a href="Index.html"><img src="https://img.freepik.com/premium-vector/beautiful-unique-logo-design-food-restaurant-company_1314480-881.jpg?semt=ais_hybrid" alt="Logo"></a></li>
+                       <li><a href="Index.html#kategori-grid">Kategorier</a></li>
                        <li><a href="#Global-footer">Kontakt oss</a></li>
                    </ul>
                    <ul class="Ikon-liste">
                       <li> <a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                      <li> <a href="handlekurv.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                      <li> <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                       <li> <a href="#"><i class="fa-solid fa-user"></i></a></li>
                    </ul>
             </nav> 
@@ -59,7 +59,7 @@
 
                             <aside>
                                <p id="Produkt-ikon"> <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-trash"></i> </p>
-                               <a href="#">ChateauDeFrance</a> 
+                               <a href="produckt.html">ChateauDeFrance</a> 
                                 <p>Kr 250</p>
                                 <p>Type: Rødvin</p>
                             
@@ -90,7 +90,7 @@
 
                     <aside>
                         <p id="Produkt-ikon-2"> <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-trash"></i> </p>
-                        <a href="#">ChateauDeFrance</a>
+                        <a href="produckt.html">ChateauDeFrance</a>
                         <p>Kr 250</p>
                         <p>Type: Rødvin</p>
                     
@@ -120,7 +120,7 @@
 
                         <aside>
                             <p id="Produkt-ikon-3"> <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-trash"></i> </p>
-                            <a href="#">ChateauDeFrance</a>
+                            <a href="produckt.html">ChateauDeFrance</a>
                             <p>Kr 250</p>
                             <p>Type: Rødvin</p>
                         
@@ -207,7 +207,7 @@
 
                         <form class="Telefon-felt">
                             <label for="Telefon-nummer">Telefon</label>
-                            <input type="number" placeholder="+47960***66" id="Telefon-nummer">
+                            <input type="tel" placeholder="+47960***66" id="Telefon-nummer">
                         </form>
 
                         <form>
@@ -247,8 +247,9 @@
 
                                         <section class="Levering-knapp">
 
+                                       
+                                        <input type="radio"  name="levering" id="Ekspress-utleveringsted" required> 
                                         <label for="Ekspress-utleveringsted"> Ekspress utleveringssted </label>
-                                        <input type="radio"  name="levering" id="Ekspress-utleveringsted" required>
                                         <p class="Pris">59 kr <i class="fa-brands fa-dhl"></i></p>
 
                                         </section>
@@ -258,8 +259,9 @@
                                <article class="Hjem">
                                 <section class="Levering-knapp">
 
-                                    <label for="Hjemlevering">Standard Hjemmelevering</label>
+                                    
                                     <input type="radio" name="levering" id="Hjemlevering" required>
+                                    <label for="Hjemlevering">Standard Hjemmelevering</label>
                                     <p class="Pris">Gratis <i class="fa-solid fa-box"></i></p>
 
                                 </section>
@@ -306,10 +308,12 @@
 
                    <article class="Fullfør-betaling">
                         <form>
-                            <article></article>
-                        <p>Å betale inkl. mva.</p>
-                        <h3>1 299kr</h3>
-                        
+                            
+                        <section>
+                            <p>Å betale inkl. mva.</p>
+
+                            <h3>1 299kr</h3>
+                        </section>
                             <input type="submit" class="Kontakt-knapp" value="Fullfør kjøp">
                         
                         <p>Du bekrefter herved at opplysningene og dokumentene du har
@@ -353,9 +357,9 @@
         
                     <section class="Snarveier">
                     <h3>Snarveier</h3>
-                    <a href="#">Produkter</a>
-                    <a href="#">Kategorier</a>
-                    <a href="#">Kontakt oss</a>
+                    <a href="Index.html#Produkter">Produkter</a>
+                    <a href="Index.html#kategori-grid">Kategorier</a>
+                    <a href="#footer">Kontakt oss</a>
                     </section>
         
                     <section class="Medier">

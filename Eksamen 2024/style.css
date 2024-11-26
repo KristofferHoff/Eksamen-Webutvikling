@@ -3,7 +3,10 @@
     box-sizing: border-box;
 }
 
-
+table{
+    display: flex;
+    justify-content: center;
+}
 /*ALT FOR MOBIL*/
 
 @media only screen and (max-width: 426px){
@@ -42,20 +45,20 @@ html{
      list-style: none;
  }
 
-/* BRUK AV CHAT GPT */
- .search-form {
+   /* BRUK AV CHAT GPT */
+   .search-form {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 200px;
     max-width: 500px;
     margin: 0 auto;
     position: relative;
   }
   
   .search-form input {
-    width: 100%;
-    padding: 12px 15px;
+    width: 200px;
+    padding: 7px;
     font-size: 1rem;
     border: 2px solid #ddd;
     border-radius: 25px;
@@ -68,7 +71,7 @@ html{
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0;
+    padding: 7px;
   }
   
   .search-form button i {
@@ -80,6 +83,7 @@ html{
     border-color: #007BFF;
     outline: none;
   }
+  /* slutt BRUK AV CHAT GPT */
   
 
 
@@ -116,6 +120,9 @@ html{
 .Banner-hidden{
     display: none;
  }
+ .Pil-banner{
+    display: none;
+}
  
 
 
@@ -608,7 +615,7 @@ p{
     h3{
         text-align: center;
         font-size: 25px;
-        font-style: bold;
+        font-weight: bolder;
         
     }
     section{
@@ -831,6 +838,11 @@ i{
     font-size: 20px;
     margin-right: 20px;
     margin-top: 30px;
+    i{
+        padding: 10px;
+        background-color: lightgray;
+        border-radius: 20px;
+    }
 }
 .Andmeldelse-knapp summary{
     display: flex;
@@ -915,13 +927,7 @@ gap: 1rem;
     text-decoration: none;
     color: black;
 }
-.Hjerte-ikon{
-    display: flex;
-    justify-content: flex-end;
-    font-size: 20px;
-    margin-right: 20px;
-    margin-top: 30px;
-}
+
 
 
 
@@ -1016,7 +1022,7 @@ gap: 1rem;
        box-sizing: border-box;
        background-color: black;
        border-radius: 27px;
-       height: 350px;
+       height: 500px;
 
     }
 
@@ -1034,6 +1040,9 @@ gap: 1rem;
         box-sizing: border-box;
         text-align: end;
         justify-content: center;
+    }
+    .Pil-banner{
+        display: none;
     }
     
   
@@ -1189,19 +1198,19 @@ gap: 1rem;
 
 
    /* BRUK AV CHAT GPT */
- .search-form {
+   .search-form {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 200px;
     max-width: 500px;
     margin: 0 auto;
     position: relative;
   }
   
   .search-form input {
-    width: 100%;
-    padding: 12px 15px;
+    width: 200px;
+    padding: 7px;
     font-size: 1rem;
     border: 2px solid #ddd;
     border-radius: 25px;
@@ -1214,7 +1223,7 @@ gap: 1rem;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0;
+    padding: 7px;
   }
   
   .search-form button i {
@@ -1226,7 +1235,7 @@ gap: 1rem;
     border-color: #007BFF;
     outline: none;
   }
-
+  /* slutt BRUK AV CHAT GPT */
 
 
 
@@ -1661,7 +1670,7 @@ p{
     h3{
         text-align: center;
         font-size: 25px;
-        font-style: bold;
+        font-weight: bolder;
         
     }
     section{
@@ -1926,6 +1935,11 @@ summary::marker{
     font-size: 20px;
     margin-right: 20px;
     margin-top: 30px;
+    i{
+        padding: 10px;
+        background-color: lightgray;
+        border-radius: 20px;
+    }
 }
 .Andmeldelse-knapp summary{
     display: flex;
@@ -1957,13 +1971,7 @@ gap: 1rem;
     text-decoration: none;
     color: black;
 }
-.Hjerte-ikon{
-    display: flex;
-    justify-content: flex-end;
-    font-size: 20px;
-    margin-right: 20px;
-    margin-top: 30px;
-}
+
 
 
 /* SMULESTI*/
@@ -2051,7 +2059,8 @@ gap: 1rem;
        box-sizing: border-box;
        background-color: black;
        border-radius: 27px;
-       height: 416px;
+       gap: 20px;
+       height: 500px;
     }
 
     .wrapper #banner, #banner-2, #banner-3 {
@@ -2061,6 +2070,7 @@ gap: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-end; 
+        place-content: center;
         align-items: flex-end; 
         scroll-snap-align: flex-end; 
         text-align: flex-end;
@@ -2070,11 +2080,51 @@ gap: 1rem;
     
     .wrapper #banner, #banner-2, #banner-3 article {
         text-align: end;
-        max-width: 600px;
+        max-width: 400px;
         min-height: 382px;
         justify-content: flex-end;
+        place-content: center;
         justify-content: center;
+        p{
+            max-width: 500px;
+        }
     }
+
+     /*BRUK AV CHHAT GPT*/
+     .Pil-banner {
+        position: relative; /* Setter Pil-banner som referanse for absolutte posisjoner */
+        width: 100%; /* Sørger for at Pil-banner dekker hele bannerets bredde */
+        z-index: 10; /* Sørger for at pilene er synlige over innholdet */
+        height: 100%; /* Matcher høyden til selve banneren */
+      }
+      
+      .Pil-banner i {
+        position: absolute; /* Plasseres relativt til Pil-banner */
+        top: 250px; /* Plasser pilene midt på banneret */
+        transform: translateY(-50%); /* Justerer midtpunktet vertikalt */
+        font-size: 1.5rem; /* Juster størrelsen på pilene */
+        color: black; /* Velg ønsket farge */
+        pointer-events: auto; /* Sørg for at pilene er interaktive */
+        cursor: pointer; /* Legger til håndikon for interaktivitet */
+        margin-right: 18px;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: lightgray;
+      }
+      
+      .Pil-banner i.fa-arrow-left {
+        left: 1rem; /* Plasser venstre pil 1rem fra kanten */
+      }
+      
+      .Pil-banner i.fa-arrow-right {
+        right: 1rem; /* Plasser høyre pil 1rem fra kanten */
+      }
+      
+    
+      
+      
+    
+    
 
     
   
@@ -2226,24 +2276,27 @@ header ul li img{
         list-style: none;
     }
 
-  /* BRUK AV CHAT GPT */
+
+
+
+    /* BRUK AV CHAT GPT */
  .search-form {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    max-width: 230px;
+    width: 200px;
+    max-width: 500px;
     margin: 0 auto;
     position: relative;
   }
   
   .search-form input {
-    width: 100%;
-    padding: 12px 15px;
+    width: 200px;
+    padding: 7px;
     font-size: 1rem;
     border: 2px solid #ddd;
     border-radius: 25px;
-    padding-right: 40px; /* Plass til ikonet */
+    padding-right: 40px; 
   }
   
   .search-form button {
@@ -2252,7 +2305,7 @@ header ul li img{
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0;
+    padding: 7px;
   }
   
   .search-form button i {
@@ -2264,6 +2317,7 @@ header ul li img{
     border-color: #007BFF;
     outline: none;
   }
+  /* slutt BRUK AV CHAT GPT */
 
 
 
@@ -2367,8 +2421,12 @@ gap: 1rem;
     font-size: 20px;
     margin-right: 20px;
     margin-top: 30px;
+    i{
+        padding: 10px;
+        background-color: lightgray;
+        border-radius: 20px;
+    }
 }
-
 
 
 
@@ -2807,6 +2865,7 @@ p{
 .Fullfør-betaling{
     margin: 0 auto;
     max-width: 780px;
+
     p{
         text-align: center;
         padding: 5px;
@@ -2814,16 +2873,16 @@ p{
     h3{
         text-align: center;
         font-size: 25px;
-        font-style: bold;
+        font-weight: bolder;
         
     }
     section{
         text-align: center;
         padding: 5px;
     }
-   
-    
 }
+
+
 .Kort-nummer{
    width: 100%;
     gap: 5px;
