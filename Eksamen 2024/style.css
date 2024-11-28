@@ -25,7 +25,6 @@ html{
 
  header ul li img{
     width: 125px;
-    border-radius: 100px;
  }
 
  .Meny-liste, .Ikon-liste{
@@ -864,6 +863,9 @@ i{
 .Produkt-info{
     width: 100%;
     min-width: 365px;
+    a{
+        color: #555;
+    }
 }
 #Knapper{
     display: flex;
@@ -1996,7 +1998,11 @@ summary::marker{
 }
 .Produkt-info{
     width: 100%;
+    a{
+        color: #555;
+    }
 }
+
 #Knapper{
     display: flex;
     width: 100%;
