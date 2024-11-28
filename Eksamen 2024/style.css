@@ -862,7 +862,7 @@ i{
 }
 .Produkt-info{
     width: 100%;
-    min-width: 365px;
+    min-width: 387px;
     a{
         color: #555;
     }
@@ -3199,6 +3199,7 @@ summary::marker{
 .Andmeldelse-kort-2{
     border: 1px solid rgba(151, 144, 144, 0.784);
     border-radius: 20px;
+    margin-top: 20px;
 }
 
 /* SMULESTI*/
