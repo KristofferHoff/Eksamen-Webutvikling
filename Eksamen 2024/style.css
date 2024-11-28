@@ -25,6 +25,7 @@ html{
 
  header ul li img{
     width: 125px;
+    border-radius: 100px;
  }
 
  .Meny-liste, .Ikon-liste{
@@ -2487,7 +2488,7 @@ header ul li img{
     max-width: 350px; 
     min-width: 150px; 
     width: 100%; 
-    box-shadow: 1px 0px 20px 20px #efefef; 
+    box-shadow: 1px 20px 20px 20px #efefef; 
     border-radius: 10px; 
     padding: 1,5rem;
     margin-top: 1rem;
