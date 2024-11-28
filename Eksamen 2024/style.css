@@ -9,7 +9,7 @@ table{
 }
 /*ALT FOR MOBIL*/
 
-@media only screen and (max-width: 426px){
+@media only screen and (max-width: 492px){
 html{
     font-family: sans-serif;
 }
@@ -135,7 +135,7 @@ html{
     max-width: 350px; 
     min-width: 150px; 
     width: 100%; 
-    box-shadow: 13px 9px 20px 0px #efefef; 
+    box-shadow: 1px 20px 20px 20px #efefef; 
     border-radius: 4px; 
     padding: 1rem;
 }
@@ -152,6 +152,9 @@ html{
     display: flex;
     justify-content: center;
 }
+#Produkt-area{
+margin-top: 20px;
+}
 
 
 
@@ -164,6 +167,11 @@ html{
     padding: 20px;
     gap: 10px;
     border-radius: 10px;
+}
+#Kategorier{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 #kategori-grid section {
     background-color: #ffffff;
@@ -1013,7 +1021,7 @@ gap: 1rem;
 
 
 /* ALT FOR TABLETT*/
-@media only screen and (min-width: 427px) and (max-width: 895px) {
+@media only screen and (min-width: 493px) and (max-width: 1096px) {
     html{
         font-family: sans-serif;
     }
@@ -1106,6 +1114,11 @@ gap: 1rem;
 
 
    /*ALT INNENFOR KATEGORI*/
+   #Kategorier{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
 
    #kategori-grid{
@@ -1124,7 +1137,7 @@ gap: 1rem;
         text-decoration: none;
         color: white;
     }
-
+  
     #kategori-grid section{
         align-items: end;
         padding: 1rem;
@@ -1360,7 +1373,7 @@ gap: 1rem;
     max-width: 350px; 
     min-width: 150px; 
     width: 100%; 
-    box-shadow: 13px 9px 20px 0px #efefef; 
+    box-shadow: 1px 0px 20px 20px #efefef; 
     border-radius: 4px; 
     padding: 1rem;
 }
@@ -1452,10 +1465,12 @@ gap: 1rem;
 }
 .footer-header{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
      align-items: center;
     justify-content: space-around;
+   
    }
    .footer-info{
     display: grid;
@@ -2073,7 +2088,7 @@ gap: 1rem;
 
  
 /*ALT FOR DESKTOP*/
-@media only screen and (min-width: 896px)  {
+@media only screen and (min-width: 1097px)  {
     
     
     html{
@@ -2219,6 +2234,11 @@ gap: 1rem;
     gap: 1rem;
     height: 600px;
     margin: 0 auto;
+    }
+    #Kategorier{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
     #kategori-grid h2 {
         grid-column: 1 / -1;
@@ -2467,7 +2487,7 @@ header ul li img{
     max-width: 350px; 
     min-width: 150px; 
     width: 100%; 
-    box-shadow: 13px 9px 20px 0px #efefef; 
+    box-shadow: 1px 0px 20px 20px #efefef; 
     border-radius: 10px; 
     padding: 1,5rem;
     margin-top: 1rem;
@@ -2584,6 +2604,7 @@ gap: 1rem;
 .footer-header{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
      align-items: center;
     justify-content: space-around;
