@@ -1387,7 +1387,7 @@ gap: 1rem;
     max-width: 350px; 
     min-width: 150px; 
     width: 100%; 
-    box-shadow: 1px 0px 20px 20px #efefef; 
+    box-shadow: 1px 20px 20px 20px #efefef; 
     border-radius: 4px; 
     padding: 1rem;
 }
